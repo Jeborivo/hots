@@ -1,0 +1,61 @@
+<?php
+
+function hots_menu(){
+ $items = array();  $items['admin/config/services/hots'] = array(
+   'title' => 'hots stats',
+   'description' => 'Configuration for hots module',
+   'page callback' => 'drupal_get_form',
+   'page arguments' => array('hots_form'),
+   'access arguments' => array('administer view modes settings'),
+   'type' => MENU_NORMAL_ITEM,
+ );
+ return $items;
+}
+
+function hots_block_info(){
+ $blocks ['hots'] = array(
+   'info' => t('hots'),
+ );
+ return $blocks;
+}
+
+function hots_block_view($delta=''){
+
+$heroes = displayheroes();
+
+ $block=array();
+   if ($delta == 'hots') {
+     $block['subject'] = '';
+     $block['content'] = theme('hots_output',array('heroes' => $heroes));
+   }
+ return $block;
+}
+
+function hots_theme() {
+ return array(
+   'hots_output' => array(
+     'variables' => array(
+       'title' => '',
+       'content' => '',
+       'heroes' => NULL,
+     ),
+     'template' => 'templates/hots-block--block',
+   ),
+ );
+}
+
+function displayheroes() {
+     $data_url = 'https://api.hotslogs.com/Public/Data/Heroes';
+
+     $data = drupal_http_request($data_url);
+     $list = json_decode($data->data);
+
+     $heroes = array();
+
+     foreach ($list as $item) {
+       $heroes[] = (array)$item;
+     }
+
+
+     return $heroes;
+}

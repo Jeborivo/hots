@@ -1,0 +1,5 @@
+name=hots module
+description=pokusaj
+core=7.x
+
+configure = admin/config/services/hots

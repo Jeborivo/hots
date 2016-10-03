@@ -1,0 +1,6 @@
+name = Latest tweets
+description = Pulls latest tweets from specific list.
+core = 7.x
+
+configure = admin/config/services/latest_posts
+

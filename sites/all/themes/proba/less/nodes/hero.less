@@ -1,0 +1,137 @@
+.probica {
+  background-color: @brand-pokusaj;
+  margin-bottom: 25px;
+}
+  .video{
+    video{
+     margin:0 auto;
+     width:100%;
+    //  height: 867px;
+     z-index: -100;
+   transition: 1s opacity;
+   position:relative;
+ }
+  //  @media (max-width: 1100px){
+  //   margin:0 auto;
+  //   video {
+  //    width:100%;
+  //    float:left;
+  // }
+  //  }
+    }
+
+.test{
+  width:456px;
+  position:absolute;
+  transform:translate(160px,-100px);
+  z-index:10;
+  color: @brand-pokusaj;
+  top:550px;
+  h2{
+    color:#3C75B9;
+  }
+  @media (max-width: 1100px){
+    font-size:12px;
+    width:50%;
+    display: inline-block;
+    position:static;
+    margin-top:100px;
+    margin-left:-130px;
+  }
+  @media (max-width: 500px){
+    width: 250px;
+    display: inline-block;
+    position:static;
+    margin-top: 100px;
+    margin-right:-70px;
+  }
+}
+// .margin-auto{
+//   margin:0 auto;
+// }
+.slider-news{
+  border: 2px solid #3C75B9;
+  transform:translateY(0px);
+  transition-duration: 0.7s;
+  padding: 15px;
+  &:hover{
+      border: 2px solid #6d67d6;
+      transform:translateY(-5px);
+      transition-property: all;
+      transition-duration: 0.7s;
+
+  }
+}
+
+.primary{
+display: inline-block;
+width:300px;
+  h2{
+    a{
+      color: #D6ECF5;
+    }
+  }
+}
+  .region-sranje{
+    margin-top:40px;
+    margin-left: 90px;
+    // border:1px solid green;
+    .block-views{
+      border-right:1px groove #6d67d6;
+      width:300px;
+      display:inline-block;
+      vertical-align: top;
+      margin-right:50px;
+      .block-title{
+        margin: auto;
+        text-transform: uppercase;
+        color:#D6ECF5;
+        font-family:arial,sans-serif;
+        text-shadow:0 0 5px rebeccapurple;
+        font-weight: 700;
+
+      }
+      img{
+        margin: auto;
+        border-radius: 50%;
+        border:5px solid rebeccapurple;
+        &:hover{
+          border:5px solid #c8b2e8;
+        }
+      }
+      @media(max-width: 1000px){
+        display:block;
+      }
+      .view-content{
+        .views-row{
+          width:25%;
+          display:inline-block;
+        }
+        // .field-item{
+        //   border:none;
+        // }
+        margin-top:20px;
+        // h2{
+        // .hide
+        // }
+      }
+    }
+  }
+  .skloni{
+    display:none;
+  }
+  .opis{
+    margin:20px;
+    padding:20px;
+    position:absolute;
+    z-index: 15;
+    background-color: #08020E;
+    border:2px solid rebeccapurple;
+    color:#D6ECF5;
+    display:inline!important;
+  }
+  .lebdi{
+    .field:hover + span{
+      .opis;
+    }
+  }
