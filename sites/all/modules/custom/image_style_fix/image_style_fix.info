@@ -1,0 +1,8 @@
+name = Image style fix
+description = bora peder
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = test
