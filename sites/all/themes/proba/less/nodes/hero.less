@@ -75,9 +75,21 @@ width:300px;
   .region-sranje{
     margin-top:40px;
     margin-left: 90px;
-    // border:1px solid green;
+
     .block-views{
       border-right:1px groove #6d67d6;
+      &:first-child{
+        width: 320px;
+        padding-right: 25px;
+      }
+      &:last-child{
+        border:none;
+      }
+      @media(max-width: 640px){
+        &:last-child {
+          width:300px;
+        }
+      }
       width:300px;
       display:inline-block;
       vertical-align: top;
@@ -119,6 +131,14 @@ width:300px;
   }
   .skloni{
     display:none;
+    h2{
+      margin-left:2px!important;
+      display:inline;
+      font-size: 24px;
+    }
+    .field-item{
+      width:350px!important;
+    }
   }
   .opis{
     margin:20px;
@@ -128,10 +148,48 @@ width:300px;
     background-color: #08020E;
     border:2px solid rebeccapurple;
     color:#D6ECF5;
-    display:inline!important;
+    display:block;
+    h2{
+      font-size:24px;
+    }
+
   }
   .lebdi{
     .field:hover + span{
       .opis;
     }
   }
+  .region-sranje2{
+    margin-top:40px;
+    margin-left: 90px;
+    .block-views{
+        vertical-align: top;
+      .views-row{
+        h2{
+          text-align: center;
+          width:75%;
+          margin-bottom: 30px;
+          margin-left: 50px;
+          a {    text-transform: uppercase;
+              color:#D6ECF5;
+              font-family:arial,sans-serif;
+              text-shadow:0 0 5px rebeccapurple;
+              font-weight: 700;}
+        }
+        width:530px;
+        margin-left: 220px;
+        .field-item{
+          display:inline-block;
+          width:75px;
+        .lebdi   img{
+            margin: auto;
+            border-radius: 50%;
+            border:5px solid rebeccapurple;
+            &:hover{
+              border:5px solid #c8b2e8;
+            }
+        }
+      }
+    }
+  }
+}

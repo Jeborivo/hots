@@ -84,6 +84,7 @@
   <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
+
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($display_submitted): ?>
@@ -100,8 +101,8 @@
     hide($content['links']);
     hide($content['field_tags']);
     hide($content['body']);
-
   ?>
+  
   <div class='lebdi'>
   <?php print render($content);?>
 <span class="skloni">

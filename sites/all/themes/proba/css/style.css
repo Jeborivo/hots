@@ -6796,6 +6796,18 @@ button.close {
   vertical-align: top;
   margin-right: 50px;
 }
+.region-sranje .block-views:first-child {
+  width: 320px;
+  padding-right: 25px;
+}
+.region-sranje .block-views:last-child {
+  border: none;
+}
+@media (max-width: 640px) {
+  .region-sranje .block-views:last-child {
+    width: 300px;
+  }
+}
 .region-sranje .block-views .block-title {
   margin: auto;
   text-transform: uppercase;
@@ -6827,6 +6839,14 @@ button.close {
 .skloni {
   display: none;
 }
+.skloni h2 {
+  margin-left: 2px!important;
+  display: inline;
+  font-size: 24px;
+}
+.skloni .field-item {
+  width: 350px!important;
+}
 .opis {
   margin: 20px;
   padding: 20px;
@@ -6835,7 +6855,10 @@ button.close {
   background-color: #08020E;
   border: 2px solid rebeccapurple;
   color: #D6ECF5;
-  display: inline!important;
+  display: block;
+}
+.opis h2 {
+  font-size: 24px;
 }
 .lebdi .field:hover + span {
   margin: 20px;
@@ -6845,7 +6868,46 @@ button.close {
   background-color: #08020E;
   border: 2px solid rebeccapurple;
   color: #D6ECF5;
-  display: inline!important;
+  display: block;
+}
+.lebdi .field:hover + span h2 {
+  font-size: 24px;
+}
+.region-sranje2 {
+  margin-top: 40px;
+  margin-left: 90px;
+}
+.region-sranje2 .block-views {
+  vertical-align: top;
+}
+.region-sranje2 .block-views .views-row {
+  width: 530px;
+  margin-left: 220px;
+}
+.region-sranje2 .block-views .views-row h2 {
+  text-align: center;
+  width: 75%;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+.region-sranje2 .block-views .views-row h2 a {
+  text-transform: uppercase;
+  color: #D6ECF5;
+  font-family: arial, sans-serif;
+  text-shadow: 0 0 5px rebeccapurple;
+  font-weight: 700;
+}
+.region-sranje2 .block-views .views-row .field-item {
+  display: inline-block;
+  width: 75px;
+}
+.region-sranje2 .block-views .views-row .field-item .lebdi img {
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid rebeccapurple;
+}
+.region-sranje2 .block-views .views-row .field-item .lebdi img:hover {
+  border: 5px solid #c8b2e8;
 }
 .glava {
   background-image: url('../images/boba.jpg');

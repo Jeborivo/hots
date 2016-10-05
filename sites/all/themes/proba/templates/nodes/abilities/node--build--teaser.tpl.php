@@ -78,12 +78,14 @@
  *
  * @ingroup templates
  */
+
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($display_submitted): ?>
@@ -99,18 +101,13 @@
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_tags']);
-    hide($content['body']);
 
   ?>
-  <div class='lebdi'>
-  <?php print render($content);?>
-<span class="skloni">
-<h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
-<?php
-print render ($content['body']); // <---NEPOTREBNO ! ! !
-?>
-  </span>
-</div>
+
+  <div class="row">
+    <div class="col-md-12"> <?php print render($content['field_ability']); ?>
+    </div>    
+  </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>

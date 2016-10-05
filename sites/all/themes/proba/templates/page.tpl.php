@@ -116,6 +116,7 @@
     </div>
 <div class="block-inline">
 <?php print render ($page['sranje']);?>
+<div class="col-md-12"><?php print render ($page['sranje2']);?> </div>
 </div>
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
