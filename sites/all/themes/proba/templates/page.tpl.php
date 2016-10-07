@@ -99,9 +99,8 @@
   </div>
 </header>
 <!-- MAIN ODAVLE -->
-
+  <?php print render($page['map']); ?>
 <div class="main-container <?php print $container_class; ?>">
-
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>

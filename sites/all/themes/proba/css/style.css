@@ -6931,7 +6931,7 @@ button.close {
   overflow: hidden;
 }
 body {
-  background-color: #08020E;
+  background-color: #0A0010;
 }
 .vest {
   color: #D6ECF5;
@@ -6966,5 +6966,77 @@ body {
 }
 .hero {
   margin: auto;
+}
+.region-map {
+  width: 100%;
+}
+.region-map .view-content {
+  position: relative;
+}
+.region-map .view-content .slick-next {
+  top: 50%;
+  z-index: 10;
+  right: 0%;
+  font-size: 800%;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.region-map .view-content .slick-next i {
+  color: rgba(217, 217, 217, 0.5);
+}
+.region-map .view-content .slick-next i:hover {
+  color: #b9b9b9;
+}
+@media (max-width: 1024px) {
+  .region-map .view-content .slick-next i {
+    display: none;
+  }
+}
+.region-map .view-content .slick-prev {
+  top: 50%;
+  z-index: 10;
+  font-size: 800%;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.region-map .view-content .slick-prev i {
+  color: rgba(217, 217, 217, 0.5);
+}
+.region-map .view-content .slick-prev i:hover {
+  color: #b9b9b9;
+}
+@media (max-width: 1024px) {
+  .region-map .view-content .slick-prev i {
+    display: none;
+  }
+}
+.region-map .field-item img {
+  width: 100%;
+}
+.region-map .views-row .trans {
+  color: #fff;
+  text-shadow: 0 0 3px blue;
+  font-weight: 900;
+  font-size: 24px;
+  z-index: 12;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.region-map .views-row h2 a {
+  text-align: center;
+  font-size: 48px;
+  font-family: gothic;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 3px blue;
+  font-weight: 900;
+}
+.region-map .views-row h2 a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
