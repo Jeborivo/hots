@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Maps i sve feature.
+ */
+
+include_once 'maps_i_sve.features.inc';
