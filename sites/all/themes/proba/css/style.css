@@ -6741,11 +6741,17 @@ button.close {
   position: absolute;
   transform: translate(160px, -100px);
   z-index: 10;
-  color: yellow;
+  color: #337ab7;
+  font-size: 18px;
+  font-weight: 700;
   top: 550px;
 }
 .test h2 {
-  color: #3C75B9;
+  font-weight: 900;
+  color: #D6ECF5;
+  font-family: arial, sans-serif;
+  text-shadow: 0 0 50px rebeccapurple;
+  text-transform: uppercase;
 }
 @media (max-width: 1100px) {
   .test {
@@ -7012,22 +7018,57 @@ body {
     display: none;
   }
 }
-.region-map .field-item img {
+.region-map .view-content .field-item img {
+  z-index: -100;
   width: 100%;
 }
-.region-map .views-row .trans {
+.region-map .view-content .views-row .pref-heroes {
+  display: inline-block;
+  position: absolute;
+  bottom: 0%;
+  margin-left: 65%;
+  width: 500px;
+  height: 300px;
+}
+.region-map .view-content .views-row .pref-heroes .field-item {
+  margin-bottom: 10px;
+  width: 120px;
+  display: inline-block;
+}
+.region-map .view-content .views-row .pref-heroes img {
+  display: inline-block;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid rebeccapurple;
+}
+.region-map .view-content .views-row .pref-heroes img:hover {
+  border: 2px solid yellow;
+}
+@media (max-width: 1200px) {
+  .region-map .view-content .views-row .pref-heroes {
+    width: 300px;
+    height: 175;
+  }
+  .region-map .view-content .views-row .pref-heroes .field-item {
+    width: 90px;
+  }
+  .region-map .view-content .views-row .pref-heroes .field-item img {
+    width: 75px;
+  }
+}
+.region-map .view-content .views-row .trans {
   color: #fff;
   text-shadow: 0 0 3px blue;
   font-weight: 900;
   font-size: 24px;
   z-index: 12;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 530px;
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 5%;
+  margin-left: 86px;
 }
-.region-map .views-row h2 a {
+.region-map .view-content .views-row h2 a {
   text-align: center;
   font-size: 48px;
   font-family: gothic;
@@ -7036,7 +7077,7 @@ body {
   text-shadow: 0 0 3px blue;
   font-weight: 900;
 }
-.region-map .views-row h2 a:hover {
+.region-map .view-content .views-row h2 a:hover {
   text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

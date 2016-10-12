@@ -84,7 +84,7 @@
   <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
-
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($display_submitted): ?>
@@ -100,20 +100,17 @@
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_tags']);
-    print render($content['field_image']);
+    hide($content['field_preferred_hero']);
+    print render($content);
   ?>
-  <div class="pref-heroes">
-  <?php print render($content['field_preferred_hero']);?>
-</div>
-    <div class="trans">
-  <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php print render($content['body']);?>
-    </div>
+  <div class="node-map-pref-heroes">
+
+      <?php print render($content['field_preferred_hero']);?>
+    
+  </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>
-    <?php print render($content['links']); ?>
   </footer>
   <?php endif; ?>
-
 </article>

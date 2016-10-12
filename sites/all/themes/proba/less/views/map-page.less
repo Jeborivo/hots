@@ -37,26 +37,58 @@
   position: absolute;
   transform: translateY(-50%);
       }
-    }
+
     .field-item{
       img{
+        z-index: -100;
         width:100%;
       }
     }
     .views-row{
+      .pref-heroes{
+        .field-item{
+          margin-bottom:10px;
+          width:120px;
+          display:inline-block;
+      }
+        display:inline-block;
+        position: absolute;
+        bottom: 0%;
+        margin-left: 65%;
+        width:500px;
+        height:300px;
+      img {
+        display: inline-block;
+        width:100px;
+        border-radius: 50%;
+        border:2px solid rebeccapurple;
+        &:hover {
+          border:2px solid yellow;
+        }
+      }
+        @media (max-width: 1200px){
+          width:300px;
+          height:175;
+          .field-item {
+              width:90px;
+            img{
+            width:75px;
+          }
+        }
+        }
+    }
       .trans{
         color:#fff;
         text-shadow: 0 0 3px blue;
         font-weight: 900;
         font-size: 24px;
         z-index: 12;
-        width:300px;
-        height:200px;
+        width:500px;
+        height:530px;
         position: absolute;
-        top:10%;
-        left:5%;
-
-      }
+        top:5%;
+        margin-left: 86px;
+    }
       h2{
         a{
           text-align: center;
@@ -74,3 +106,4 @@
       }
     }
   }
+}
