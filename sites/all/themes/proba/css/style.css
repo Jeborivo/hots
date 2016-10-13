@@ -6974,7 +6974,11 @@ body {
   margin: auto;
 }
 .region-map {
+  position: relative;
   width: 100%;
+}
+.region-map .node-map {
+  position: relative;
 }
 .region-map .view-content {
   position: relative;
@@ -7079,5 +7083,26 @@ body {
 }
 .region-map .view-content .views-row h2 a:hover {
   text-decoration: none;
+}
+.heroes-page .views-row {
+  width: 230px;
+  margin-right: 5px;
+  display: inline-block;
+}
+.heroes-page .views-row .view-content {
+  margin-top: 30px;
+}
+.heroes-page .field {
+  width: 230px;
+}
+.heroes-page .field img {
+  border: 3px solid #0A0010;
+  margin: auto;
+}
+.heroes-page .field img:hover {
+  border: 3px solid #1EC4ED;
+  border-radius: 3%;
+  transition-duration: 0.6s;
+  box-shadow: 0 0 20px #1EC4ED;
 }
 /*# sourceMappingURL=style.css.map */
