@@ -78,13 +78,19 @@
  *
  * @ingroup templates
  */
+  $klasa = field_get_items("node",$node,"field_universe");
 ?>
+
+<div class="<?php print $klasa[0]['entity']->nid ?> grid-item">
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
+
+
+
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
-  
+
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($display_submitted): ?>
@@ -101,6 +107,8 @@
     hide($content['links']);
     hide($content['field_tags']);
     print render($content['field_list']);
+    hide($content['field_universe']);
+
   ?>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
@@ -108,3 +116,4 @@
   </footer>
   <?php endif; ?>
 </article>
+</div>

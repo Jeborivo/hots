@@ -10,12 +10,12 @@
   <script type="text/javascript">
  jQuery(document).ready(function ($) {
   $('.map-slider').slick({
-     autoplay:false,
+     autoplay:true,
      arrows:true,
      prevArrow:'<a class="slick-prev"><i class="fa fa-chevron-left fa-6"></i></a>',
      nextArrow:'<a class="slick-next"><i class="fa fa-chevron-right fa-6 "></i></a>',
-     infinite: true,
-     speed: 500,
+     infinite: true
+
 
     });;
  });

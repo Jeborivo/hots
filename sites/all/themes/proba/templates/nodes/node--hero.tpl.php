@@ -80,10 +80,14 @@
  */
  $subname = field_get_items("node",$node,"field_sub_name");
 
-?>
+ ?>
+
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
+
+
+<?php print $klasa[0]['entity']->nid ?>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
 
