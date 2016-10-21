@@ -23,21 +23,25 @@ jQuery(document).ready(function(){
   });
 });
 </script>
-<div class="button-group filter-button-group">
-  <button data-filter="*">show all</button>
-  <button data-filter=".4">starcraft</button>
-  <button data-filter=".25">warcraft</button>
-  <button data-filter="">b</button>
-  <button data-filter="">diablo</button>
-  <button data-filter="">overwatch</button>
-</div>
-    <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
+
+  <div class="button-group filter-button-group">
+    <button data-filter="*">show all</button>
+    <button data-filter=".4">starcraft</button>
+    <button data-filter=".25">warcraft</button>
+    <button data-filter="">b</button>
+    <button data-filter="">diablo</button>
+    <button data-filter="">overwatch</button>
+  </div>
+<div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+
     <?php print $row;?>
-</div>
+
+
 <?php endforeach; ?>
   </div>
+</div>

@@ -116,13 +116,17 @@
     </div>
            <div class="test col-md-6">
              <div class="row">
+
                <div class="col-sm-3 notext">
+
                   <?php print render($content['field_universe'])?>
+
               </div>
                 <h2<?php print $title_attributes; ?>
                 class="col-sm-6"><?php print $title; ?></h2>
              </div>
              <?php print render($content['body']);?>
+             <?php print render($content['field_role'])?>
              <?php print render($content['field_hero_icon']);?>
            </div>
      </div>
