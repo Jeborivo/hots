@@ -82,13 +82,13 @@
   $role = field_get_items("node",$node,"field_role");
 ?>
 
-<div class="<?php print $klasa[0]['entity']->title ?> <?php print $role[0]['entity']->nid ?> grid-item">
+<div class="<?php print $klasa[0]['entity']->title ?> <?php print $role[0]['entity']->title ?> grid-item">
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
-<?php print $role[0]['entity']->nid ?>
+<?php print $role[0]['entity']->title ?>
 <?php print $klasa[0]['entity']->title ?>
-<?php dsm($klasa)?>
+<?php dsm($role)?>
 
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
