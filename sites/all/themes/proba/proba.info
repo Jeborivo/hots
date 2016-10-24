@@ -44,6 +44,6 @@ scripts[] = 'js/popover.js'
 scripts[] = 'js/scrollspy.js'
 scripts[] = 'js/tab.js'
 scripts[] = 'js/transition.js'
-
+scripts[] = 'js/script.js'
 ; Disable the CDN provider so compiled source files can be used.
 settings[bootstrap_cdn] = ''

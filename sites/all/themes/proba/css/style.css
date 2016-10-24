@@ -6915,9 +6915,6 @@ button.close {
 .region-sranje2 .block-views .views-row .field-item .lebdi img:hover {
   border: 5px solid #c8b2e8;
 }
-.role {
-  background-color: red;
-}
 .glava {
   background-image: url('../images/boba.jpg');
   background-size: cover;
@@ -7087,8 +7084,18 @@ body {
 .region-map .view-content .views-row h2 a:hover {
   text-decoration: none;
 }
-.heroes-page .25 {
-  margin-top: 50px!important;
+.heroes-page .role {
+  position: absolute;
+  top: 200px;
+}
+.heroes-page .role img {
+  float: left;
+  margin-left: 5px!important;
+  border: 0px solid black!important;
+}
+.heroes-page .role img:hover {
+  border: 0px solid black!important;
+  box-shadow: none!important;
 }
 .heroes-page .views-row {
   width: 230px;

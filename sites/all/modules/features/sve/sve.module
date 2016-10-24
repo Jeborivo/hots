@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the sve feature.
+ */
+
+include_once 'sve.features.inc';

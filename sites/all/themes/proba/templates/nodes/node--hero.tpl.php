@@ -86,8 +86,8 @@
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
 
+<?php dsm($subname)?>
 
-<?php print $klasa[0]['entity']->nid ?>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
 
