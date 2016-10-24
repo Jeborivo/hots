@@ -69,8 +69,8 @@ jQuery(function ($) {
 <div class="filters">
 <div class="button-group" data-filter-group="universe">
   <button data-filter="">any</button>
-  <button data-filter=".4">Starcraft</button>
-  <button data-filter=".25">Warcraft</button>
+  <button data-filter=".Starcraft">Starcraft</button>
+  <button data-filter=".wc">Warcraft</button>
 </div>
 <div class="button-group" data-filter-group="role">
   <button data-filter="">any</button>
