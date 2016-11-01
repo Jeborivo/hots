@@ -19,7 +19,32 @@
   // }
   //  }
     }
-
+.probahero{
+  @media(max-width: 1024px){
+    margin-left: 60px;
+  }
+  .synergize{
+    img {
+      display: inline-block;
+      width:100px;
+      border-radius:5%;
+      border:2px solid #009900;
+    }
+  }
+.countered{
+  img {
+    display: inline-block;
+    width:100px;
+    border-radius:5%;
+    border:2px solid #990000;
+  }
+}
+  .field-item{
+    width:100px;
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
 .test{
   width:456px;
   position:absolute;
@@ -30,7 +55,6 @@
   font-weight: 700;
   top:550px;
   h2{
-
     font-weight: 900;
     color:#D6ECF5;
     font-family:arial,sans-serif;
@@ -39,7 +63,7 @@
   }
   @media (max-width: 1100px){
     font-size:12px;
-    width:50%;
+    width:700px;
     display: inline-block;
     position:static;
     margin-top:100px;
@@ -51,6 +75,26 @@
     position:static;
     margin-top: 100px;
     margin-right:-70px;
+  }
+  @media(max-width: 1000px){
+    .drzac{
+      display:inline-block;
+      width:400px;
+    }
+    .herorole{
+      display:inline-block;
+      width:200px;
+      vertical-align: bottom;
+      .field{
+        display: inline-block;
+        width:200px;
+      }
+      .field-items{
+            width:200px;
+            margin-right: 0px;
+            border-right: 0px;
+      }
+    }
   }
 }
 // .margin-auto{
@@ -85,6 +129,13 @@ width:300px;
 
     .block-views{
       border-right:1px groove #6d67d6;
+      @media(max-width: 1000px){
+        border-style:none;
+        width:150px!important;
+        display:inline-block;
+        vertical-align: top;
+        margin-right:60px;
+      }
       &:first-child{
         width: 320px;
         padding-right: 25px;
@@ -118,9 +169,9 @@ width:300px;
           border:5px solid #c8b2e8;
         }
       }
-      @media(max-width: 1000px){
-        display:block;
-      }
+      // @media(max-width: 1000px){
+      //   display:block;
+      // }
       .view-content{
         .views-row{
           width:25%;
@@ -170,6 +221,9 @@ width:300px;
     margin-top:40px;
     margin-left: 90px;
     .block-views{
+      @media(max-width: 1000px){
+        margin-right:100px;
+      }
         vertical-align: top;
       .views-row{
         h2{
@@ -185,6 +239,9 @@ width:300px;
         }
         width:530px;
         margin-left: 220px;
+        @media(max-width: 1000px){
+          margin:auto;
+        }
         .field-item{
           display:inline-block;
           width:75px;

@@ -6736,6 +6736,28 @@ button.close {
   transition: 1s opacity;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .probahero {
+    margin-left: 60px;
+  }
+}
+.probahero .synergize img {
+  display: inline-block;
+  width: 100px;
+  border-radius: 5%;
+  border: 2px solid #009900;
+}
+.probahero .countered img {
+  display: inline-block;
+  width: 100px;
+  border-radius: 5%;
+  border: 2px solid #990000;
+}
+.probahero .field-item {
+  width: 100px;
+  display: inline-block;
+  margin-left: 5px;
+}
 .test {
   width: 456px;
   position: absolute;
@@ -6756,7 +6778,7 @@ button.close {
 @media (max-width: 1100px) {
   .test {
     font-size: 12px;
-    width: 50%;
+    width: 700px;
     display: inline-block;
     position: static;
     margin-top: 100px;
@@ -6770,6 +6792,26 @@ button.close {
     position: static;
     margin-top: 100px;
     margin-right: -70px;
+  }
+}
+@media (max-width: 1000px) {
+  .test .drzac {
+    display: inline-block;
+    width: 400px;
+  }
+  .test .herorole {
+    display: inline-block;
+    width: 200px;
+    vertical-align: bottom;
+  }
+  .test .herorole .field {
+    display: inline-block;
+    width: 200px;
+  }
+  .test .herorole .field-items {
+    width: 200px;
+    margin-right: 0px;
+    border-right: 0px;
   }
 }
 .slider-news {
@@ -6802,6 +6844,15 @@ button.close {
   vertical-align: top;
   margin-right: 50px;
 }
+@media (max-width: 1000px) {
+  .region-sranje .block-views {
+    border-style: none;
+    width: 150px!important;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 60px;
+  }
+}
 .region-sranje .block-views:first-child {
   width: 320px;
   padding-right: 25px;
@@ -6829,11 +6880,6 @@ button.close {
 }
 .region-sranje .block-views img:hover {
   border: 5px solid #c8b2e8;
-}
-@media (max-width: 1000px) {
-  .region-sranje .block-views {
-    display: block;
-  }
 }
 .region-sranje .block-views .view-content {
   margin-top: 20px;
@@ -6886,6 +6932,11 @@ button.close {
 .region-sranje2 .block-views {
   vertical-align: top;
 }
+@media (max-width: 1000px) {
+  .region-sranje2 .block-views {
+    margin-right: 100px;
+  }
+}
 .region-sranje2 .block-views .views-row {
   width: 530px;
   margin-left: 220px;
@@ -6902,6 +6953,11 @@ button.close {
   font-family: arial, sans-serif;
   text-shadow: 0 0 5px rebeccapurple;
   font-weight: 700;
+}
+@media (max-width: 1000px) {
+  .region-sranje2 .block-views .views-row {
+    margin: auto;
+  }
 }
 .region-sranje2 .block-views .views-row .field-item {
   display: inline-block;
@@ -7084,7 +7140,38 @@ body {
 .region-map .view-content .views-row h2 a:hover {
   text-decoration: none;
 }
+.heroes-page .button-group button {
+  height: 40px;
+  width: 80px;
+  border-radius: 10%;
+  border: 1px solid #661B58;
+  transition-duration: 0.6s;
+  outline: none;
+  color: #D6ECF5;
+  background-color: #29083D;
+}
+.heroes-page .button-group button:hover {
+  border: 1px solid #1EC4ED;
+  border-radius: 10%;
+  transition-duration: 0.6s;
+  box-shadow: 0 0 50px #1EC4ED;
+}
+.heroes-page .is-checked {
+  background-color: #1EC4ED!important;
+  border: 1px solid #1EC4ED!important;
+  border-radius: 10%;
+  transition-duration: 0.6s;
+  box-shadow: 0 0 50px #1EC4ED;
+  color: darkblue!important;
+}
+.heroes-page .grid {
+  margin-top: 60px;
+}
+.heroes-page .filters {
+  margin-top: 20px;
+}
 .heroes-page .role {
+  width: 100px;
   position: absolute;
   top: 200px;
 }
@@ -7117,5 +7204,17 @@ body {
   border-radius: 3%;
   transition-duration: 0.6s;
   box-shadow: 0 0 20px #1EC4ED;
+}
+.heroes-page .field h2 {
+  width: 50%;
+  position: absolute;
+  top: 240px;
+  left: 86px;
+  text-transform: uppercase;
+  color: #D6ECF5;
+  font-family: arial, sans-serif;
+  text-shadow: 0 0 5px rebeccapurple;
+  font-weight: 700;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,7 +18,14 @@
  //     $grid.isotope({ filter: filterValue });
  //   });
  // });
-
+ //  <div class="button-group filter-button-group">
+ //   <button data-filter="*">show all</button>
+ //   <button data-filter=".4">starcraft</button>
+ //   <button data-filter=".25">warcraft</button>
+ //   <button data-filter="">b</button>
+ //   <button data-filter="">diablo</button>
+ //   <button data-filter="">overwatch</button>
+ // </div>
 ?>
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 <script>
@@ -67,8 +74,8 @@ jQuery(function ($) {
  });
 </script>
 <div class="filters">
-<div class="button-group" data-filter-group="universe">
-  <button data-filter="*">All</button>
+<div class="button-group col-md-6" data-filter-group="universe">
+  <button data-filter="">All</button>
   <button data-filter=".Starcraft">Starcraft</button>
   <button data-filter=".Warcraft">Warcraft</button>
   <button data-filter=".Diablo">Diablo</button>
@@ -76,21 +83,14 @@ jQuery(function ($) {
   <button data-filter=".Overwatch">Overwatch</button>
 </div>
 <div class="button-group" data-filter-group="role">
-  <button data-filter="*">All</button>
+  <button data-filter="">All</button>
   <button data-filter=".Assassin">Assassin</button>
   <button data-filter=".Specialist">Specialist</button>
   <button data-filter=".Warrior">Warrior</button>
   <button data-filter=".Support">Support</button>
 </div>
 </div>
-<!-- <div class="button-group filter-button-group">
-  <button data-filter="*">show all</button>
-  <button data-filter=".4">starcraft</button>
-  <button data-filter=".25">warcraft</button>
-  <button data-filter="">b</button>
-  <button data-filter="">diablo</button>
-  <button data-filter="">overwatch</button>
-</div> -->
+
     <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>

@@ -86,9 +86,7 @@
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
-<?php print $role[0]['entity']->title ?>
-<?php print $klasa[0]['entity']->title ?>
-<?php dsm($role)?>
+
 
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
@@ -113,6 +111,8 @@
     print render($content['field_role']);
 
   ?>
+  <h2<?php print $title_attributes; ?>
+  class="col-sm-6"><?php print $title; ?></h2>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>

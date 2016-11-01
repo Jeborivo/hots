@@ -98,7 +98,7 @@
     hide($content['field_tags']);
   ?>
   <div class="col-md-4">
-    <?php print render($content['field_image'])?>
+    <?php print render($content['field_artimage'])?>
   </div>
   <div class"col-md-8 ">
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>

@@ -86,7 +86,7 @@
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
 
-<?php dsm($subname)?>
+
 
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
@@ -115,6 +115,7 @@
       </video>
     </div>
            <div class="test col-md-6">
+             <div class="drzac">
              <div class="row">
 
                <div class="col-sm-3 notext">
@@ -126,16 +127,25 @@
                 class="col-sm-6"><?php print $title; ?></h2>
              </div>
              <?php print render($content['body']);?>
+           </div>
+           <div class="herorole">
              <?php print render($content['field_role'])?>
+           </div>
              <?php print render($content['field_hero_icon']);?>
            </div>
      </div>
-
+<div class="probahero">
+ <div class="synergize col-sm-6">
+   <?php print render($content['field_synergizes']);?>
+ </div>
+ <div class="countered col-sm-6">
+   <?php print render($content['field_countered']);?>
+ </div>
+</div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>
     <?php print render($content['links']); ?>
   </footer>
   <?php endif; ?>
-
 </article>
