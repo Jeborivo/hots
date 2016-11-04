@@ -45,5 +45,7 @@ scripts[] = 'js/scrollspy.js'
 scripts[] = 'js/tab.js'
 scripts[] = 'js/transition.js'
 scripts[] = 'js/script.js'
+
+plugins[advanced_forum][styles] = 'forum'
 ; Disable the CDN provider so compiled source files can be used.
 settings[bootstrap_cdn] = ''

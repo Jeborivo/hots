@@ -6736,16 +6736,36 @@ button.close {
   transition: 1s opacity;
   position: relative;
 }
-@media (max-width: 1024px) {
-  .probahero {
-    margin-left: 60px;
-  }
+.probahero {
+  height: 125px;
+}
+.probahero .synergize .field-label {
+  text-align: center;
+  font-weight: 900;
+  color: #D6ECF5;
+  font-family: arial, sans-serif;
+  text-shadow: 0 0 50px rebeccapurple;
+  text-transform: uppercase;
+}
+.probahero .synergize .field-items {
+  text-align: center;
 }
 .probahero .synergize img {
   display: inline-block;
   width: 100px;
   border-radius: 5%;
   border: 2px solid #009900;
+}
+.probahero .countered .field-label {
+  text-align: center;
+  font-weight: 900;
+  color: #D6ECF5;
+  font-family: arial, sans-serif;
+  text-shadow: 0 0 50px rebeccapurple;
+  text-transform: uppercase;
+}
+.probahero .countered .field-items {
+  text-align: center;
 }
 .probahero .countered img {
   display: inline-block;
