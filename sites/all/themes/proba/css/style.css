@@ -6853,6 +6853,10 @@ button.close {
 .primary h2 a {
   color: #D6ECF5;
 }
+.herocomment {
+  position: absolute;
+  top: 0;
+}
 .region-sranje {
   margin-top: 40px;
   margin-left: 90px;
@@ -6957,6 +6961,12 @@ button.close {
     margin-right: 100px;
   }
 }
+.region-sranje2 .block-views .views-row .komentari {
+  display: none;
+}
+.region-sranje2 .block-views .views-row-last .komentari {
+  display: block!important;
+}
 .region-sranje2 .block-views .views-row {
   width: 530px;
   margin-left: 220px;
@@ -7015,9 +7025,6 @@ button.close {
 body {
   background-color: #0A0010;
 }
-.vest {
-  color: #D6ECF5;
-}
 .margin-bottom {
   margin-bottom: 10px;
 }
@@ -7047,7 +7054,50 @@ body {
   background-color: #D6ECF5;
 }
 .hero {
-  margin: auto;
+  margin-top: 40px;
+}
+.hero .view-latest-news {
+  margin-bottom: 30px;
+}
+.logregister {
+  margin-right: -100px;
+}
+@media (max-width: 1024px) {
+  .logregister {
+    display: none;
+  }
+}
+.affix {
+  top: 5px;
+  right: 382px;
+  width: 100px;
+  transition: 1;
+}
+@media (max-width: 1024px) {
+  .affix {
+    display: none;
+  }
+}
+.desno {
+  width: 56px;
+  float: right;
+}
+.titl h2 {
+  color: #D6ECF5;
+}
+.vestdefault {
+  color: #337ab7;
+}
+.vestdefault img {
+  float: left !important;
+  padding-top: 10px;
+  margin: 0px 5px 0px 0px;
+}
+.vest {
+  color: #D6ECF5;
+}
+.vest a:hover {
+  text-decoration: none;
 }
 .region-map {
   position: relative;
@@ -7228,7 +7278,7 @@ body {
 .heroes-page .field h2 {
   width: 50%;
   position: absolute;
-  top: 240px;
+  top: 215px;
   left: 86px;
   text-transform: uppercase;
   color: #D6ECF5;

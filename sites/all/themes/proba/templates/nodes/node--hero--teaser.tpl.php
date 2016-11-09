@@ -102,10 +102,6 @@
   </header>
   <?php endif; ?>
   <?php
-    // Hide comments, tags, and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    hide($content['field_tags']);
     print render($content['field_list']);
     hide($content['field_universe']);
     print render($content['field_role']);
@@ -115,7 +111,6 @@
   class="col-sm-6"><?php print $title; ?></h2>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
-    <?php print render($content['field_tags']); ?>
   </footer>
   <?php endif; ?>
 </article>

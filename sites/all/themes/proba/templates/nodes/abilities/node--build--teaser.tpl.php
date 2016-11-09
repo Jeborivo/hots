@@ -96,17 +96,26 @@
     <?php endif; ?>
   </header>
   <?php endif; ?>
-  <?php
+  <!-- <?php
     // Hide comments, tags, and links now so that we can render them later.
+    // print render ($content['comments']);
+    // hide($content['links']);
+    // print render ($content['field_tags']);
+
+  ?> -->
+
+  <div class="row">
+    <div class="col-md-12"> <?php print render($content['field_ability']); ?>
+    </div>
+    <div class="col-md-12">
+    <?php
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_tags']);
 
-  ?>
+    ?>
 
-  <div class="row">
-    <div class="col-md-12"> <?php print render($content['field_ability']); ?>
-    </div>    
+    </div>
   </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>

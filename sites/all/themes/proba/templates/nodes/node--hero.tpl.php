@@ -103,9 +103,6 @@
   <?php endif; ?>
   <?php
     // Hide comments, tags, and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    hide($content['field_tags']);
   ?>
    <div class="video" >
      <div class="margin-auto ">
@@ -141,11 +138,16 @@
  <div class="countered col-sm-6">
    <?php print render($content['field_countered']);?>
  </div>
+<div class="herocomment">
+  <?php
+  print render($content['comments']);
+  print render($content['links']);
+  print render($content['field_tags']);
+  ?>
+</div>
 </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
-    <?php print render($content['field_tags']); ?>
-    <?php print render($content['links']); ?>
   </footer>
   <?php endif; ?>
 </article>

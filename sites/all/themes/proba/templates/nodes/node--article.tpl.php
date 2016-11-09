@@ -84,7 +84,7 @@
   <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($display_submitted): ?>
@@ -95,18 +95,24 @@
     <?php endif; ?>
   </header>
   <?php endif; ?>
+  <div class="titl"><h2<?php print $title_attributes; ?>><?php print $title; ?></h2><div>
   <?php
     // Hide comments, tags, and links now so that we can render them later.
     hide($content['comments']);
-    hide($content['links']);
-    hide($content['field_tags']);
-    print render($content);
+    // hide($content['links']);
+    // hide($content['field_tags']);
   ?>
+  <div class="vestdefault">
+    <?php
+       print render($content['field_artimage']);
+       print render($content['body']);
+       print render($content['comments'])
+      
+    ?>
+  </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>
-    <?php print render($content['links']); ?>
   </footer>
   <?php endif; ?>
-
 </article>
