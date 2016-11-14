@@ -6722,6 +6722,37 @@ button.close {
     display: none !important;
   }
 }
+.hero {
+  /* clear fix */
+  /* ---- .grid-item ---- */
+}
+.hero .grid {
+  background: #0A0010;
+  height: 75%;
+  /* inherit height from body */
+}
+.hero .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.hero .grid-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #0D8;
+  border: 2px solid #333;
+  border-color: rgba(0, 0, 0, 0.7);
+}
+.hero .grid-item--width2 {
+  width: 200px;
+}
+.hero .grid-item--height2 {
+  height: 200px;
+}
+.hero .grid-item--height3 {
+  height: 300px;
+}
 .views-field-value-2 img {
   width: 50px;
 }
@@ -7001,6 +7032,54 @@ button.close {
 .region-sranje2 .block-views .views-row .field-item .lebdi img:hover {
   border: 5px solid #c8b2e8;
 }
+.indented {
+  margin-left: 40px;
+}
+.herokomentar {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #423E82;
+  padding-bottom: 10px;
+}
+.commentarea {
+  color: #bce8f1;
+  font-size: 14px;
+}
+.submitted {
+  color: red;
+}
+.submitted a {
+  text-decoration: none;
+}
+.member h2 {
+  color: #337ab7;
+}
+.new {
+  color: red;
+}
+.comment-wrapper h2 {
+  color: rebeccapurple;
+}
+.filter-wrapper {
+  display: none;
+}
+.form-wrapper .btn-success {
+  background-color: rebeccapurple;
+  border: rebeccapurple;
+}
+.form-wrapper .btn-success .icon {
+  display: none;
+}
+.form-wrapper .btn-default {
+  background-color: #423E82;
+  border: #423E82;
+  color: white;
+}
+.comment-form .form-type-item {
+  display: none;
+}
+.comment-form .control-label {
+  color: rebeccapurple;
+}
 .glava {
   background-image: url('../images/boba.jpg');
   background-size: cover;
@@ -7268,6 +7347,7 @@ body {
 .heroes-page .field img {
   border: 3px solid #0A0010;
   margin: auto;
+  transition-duration: 0.6s;
 }
 .heroes-page .field img:hover {
   border: 3px solid #1EC4ED;
