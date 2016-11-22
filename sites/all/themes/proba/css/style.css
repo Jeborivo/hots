@@ -7298,6 +7298,7 @@ body {
   left: 250px;
   width: 1400px;
   margin: 0 auto;
+  text-align: center;
 }
 .region-map .dugmici button {
   display: inline-block;
