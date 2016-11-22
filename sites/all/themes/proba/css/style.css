@@ -7293,6 +7293,7 @@ body {
 }
 .region-map .dugmici {
   positon: fixed;
+  background-color: rgba(64, 64, 64, 0.5);
   top: 375px;
   left: 250px;
   width: 1400px;
@@ -7300,7 +7301,13 @@ body {
 }
 .region-map .dugmici button {
   display: inline-block;
-  background-color: #d1d;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-style: none;
+}
+.region-map .dugmici button img {
+  height: 60px;
+  width: 60;
 }
 .region-map .affix {
   top: 0px;

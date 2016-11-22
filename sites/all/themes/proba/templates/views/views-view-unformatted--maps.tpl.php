@@ -23,17 +23,19 @@ jQuery(document).ready(function($) {
 });
 </script>
 <div data-spy="affix" class="dugmici affix " data-offset-top="400">
-<button data-attr-scroll=".Warhead">Warhead Junction</button>
-<button data-attr-scroll=".Braxis">Braxis Holdout</button>
-<button data-attr-scroll=".Dragon">Dragon Shire</button>
-<button data-attr-scroll=".Sky">Sky Temple</button>
-<button data-attr-scroll=".Infernal">Infernal Shrines</button>
-<button data-attr-scroll=".Tomb">Tomb of the Spider Queen</button>
-<button data-attr-scroll=".Garden">Garden of Terror</button>
-<button data-attr-scroll=".Haunted">Haunted Mines</button>
-<button data-attr-scroll=".Towers">Towers of Doom</button>
-<button data-attr-scroll=".Battlefield">Battlefield of Eternity</button>
-<button data-attr-scroll=".Cursed">Cursed Hollow</button>
+<button data-attr-scroll=".Warhead"><img src="sites/default/files/pictures//ikonice/warhead.png"/></button>
+<button data-attr-scroll=".Braxis"><img src="sites/default/files/pictures//ikonice/braxis.png"/></button>
+<button data-attr-scroll=".Dragon"><img src="sites/default/files/pictures//ikonice/dragon.png"/></button>
+<button data-attr-scroll=".Sky"><img src="sites/default/files/pictures//ikonice/temple.png"/></button>
+<button data-attr-scroll=".Infernal"><img src="sites/default/files/pictures//ikonice/infernal.png"/></button>
+<button data-attr-scroll=".Tomb"><img src="sites/default/files/pictures//ikonice/tomb.png"/></button>
+<button data-attr-scroll=".Garden"><img src="sites/default/files/pictures//ikonice/garden.png"/></button>
+<button data-attr-scroll=".Haunted"><img src="sites/default/files/pictures//ikonice/haunted.png"/></button>
+<button data-attr-scroll=".Towers"><img src="sites/default/files/pictures//ikonice/towers.png"/></button>
+<button data-attr-scroll=".Battlefield"><img src="sites/default/files/pictures//ikonice/battlefield.png"/></button>
+<button data-attr-scroll=".Cursed"><img src="sites/default/files/pictures//ikonice/cursed.png"/></button>
+<button data-attr-scroll=".Cursed"><img src="sites/default/files/pictures//ikonice/blackheart.png"/></button>
+
 </div>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 <?php if (!empty($title)): ?>
