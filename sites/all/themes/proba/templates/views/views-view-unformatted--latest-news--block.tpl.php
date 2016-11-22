@@ -9,7 +9,7 @@
  */
 ?>
 
-
+CAO CAO CAO
 <script type="text/javascript">
  jQuery(document).ready(function ($) {
    $('.news-slide').slick({
