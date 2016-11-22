@@ -7293,7 +7293,6 @@ body {
 }
 .region-map .dugmici {
   positon: fixed;
-  background-color: rgba(64, 64, 64, 0.5);
   top: 375px;
   width: 100%;
   margin: 0 auto;
@@ -7309,6 +7308,9 @@ body {
   height: 60px;
   width: 60px;
 }
+.region-map .dugmici button:hover {
+  background: radial-gradient(circle, #1EC4ED 0%, transparent 85%);
+}
 .region-map .affix {
   top: 0px;
   width: 100%;
@@ -7316,6 +7318,7 @@ body {
   transition: 1;
   z-index: 100;
   text-align: center;
+  background-color: rgba(64, 64, 64, 0.5);
 }
 .region-map .node-map {
   position: relative;
