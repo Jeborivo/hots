@@ -17,18 +17,44 @@
   float: left;
   width: 100px;
   height: 100px;
-  background: #0D8;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.7);
-}
+  background: #0A0010;
+  //border: 2px solid red;
+  //border-color: hsla(0, 0%, 0%, 0.7);
+    border: 2px solid #3C75B9;
+    transform:translateY(0px);
+    transition-duration: 0.7s;
+    color:white;
+    &:hover{
+        border: 2px solid #e60073;
+        transform:translateY(-5px);
+        transition-property: all;
+        transition-duration: 0.7s;
+    }
+  }
 
+.grid-item--width1{
+  width:505px;
+}
 .grid-item--width2 {
    width: 200px;
  }
+.grid-item--height1{
+  height:305px;
+}
 .grid-item--height2 {
   height: 200px;
   }
 .grid-item--height3{
-  height:300px;
+  height:305px;
 }
+}
+.probateas{
+  position: relative;
+}
+.trim{
+  position: absolute;
+  top:230px;
+  border-top: 2px solid #3c75b9;
+  background-color: rgba(62, 33, 91, 0.5);
+  height:70px;
 }

@@ -1,11 +1,100 @@
 .region-map{
+  .dugmici{
+    positon:fixed;
+    top:375px;
+    left:250px;
+    width:1400px;
+    margin:0 auto;
+   button{
+     display: inline-block;
+     background-color: #d1d;
+   }
+ }
+   .affix{
+     top: 0px;
+     width:1400px;
+     left:250px;
+     transition: 1;
+     z-index: 100;
+  }
   .node-map{
     position:relative;
   }
-  position:relative;
-  width: 100%;
-  .view-content{
+  .panel-default{
+    border-style: none;
+  }
+  .panel-heading{
+    background-color: #00004D;
     position: relative;
+    a{
+      position: absolute;
+      left: 50%;
+      bottom: 0%;
+      font-size: 50px;
+      color:white;
+      &:hover{
+      text-decoration:none;
+      }
+      &:active{
+      text-decoration: none;
+      }
+      &:focus{
+        text-decoration: none;
+      }
+    }
+    h2{
+      position: absolute;
+      top:5%;
+      left:45%;
+      color:#D6ECF5;
+      font-size: 34px;
+      text-transform: uppercase;
+      font-family:arial,sans-serif;
+      text-shadow:0 0 5px rebeccapurple;
+    }
+  }
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+      border-style: none;
+  }
+  .panel-title{
+    color:#D6ECF5;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family:arial,sans-serif;
+    text-shadow:0 0 5px rebeccapurple;
+    position:relative;
+    width: 100%;
+    img{
+      width:100%;
+      height: 300px;
+    }
+  }
+  .panel-body{
+    background-color:#00004D;
+    border-style: none;
+    .zatvori{
+      position: absolute;
+      right:5%;
+      top:0%;
+      font-size: 50px;
+      color:white;
+      &:hover{
+      text-decoration:none;
+      }
+      &:active{
+      text-decoration: none;
+      }
+      &:focus{
+        text-decoration: none;
+      }
+    }
+  }
+  .view-content{
+    margin-top: 70px;
+    position: relative;
+    .slick-track{
+      margin-top: 30px;
+    }
     .slick-next {
   i{
     color:rgba(217,217,217,0.5);
@@ -92,7 +181,10 @@
         position: absolute;
         top:5%;
         margin-left: 86px;
-
+        img{
+          width: 400px;
+          height: 300px;
+        }
     }
       h2{
         a{

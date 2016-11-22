@@ -90,7 +90,9 @@ jQuery(function ($) {
   <button data-filter=".Support">Support</button>
 </div>
 </div>
-
+<div class="freetoplay">
+<p><img src="http://us.battle.net/heroes/static/images/heroes/free-icon.png">Free to play </p>
+</div>
     <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>

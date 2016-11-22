@@ -79,12 +79,13 @@
  * @ingroup templates
  */
 ?>
+
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    <h2> <?php print $title_attributes; ?> <?php print $node_url; ?> <?php print $title; ?> </h2>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($display_submitted): ?>
@@ -106,7 +107,7 @@
   <div class="node-map-pref-heroes">
 
       <?php print render($content['field_preferred_hero']);?>
-    
+
   </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>

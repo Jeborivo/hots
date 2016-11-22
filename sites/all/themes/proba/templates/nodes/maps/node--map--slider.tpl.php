@@ -78,7 +78,27 @@
  *
  * @ingroup templates
  */
+$ime = $node->title
 ?>
+
+<script>
+jQuery(function ($) {
+  $('.collapse').collapse()
+});
+</script>
+<div class="panel-group <?php echo $ime ?>" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="node-<?php print $node->nid; ?>">
+      <h4 class="panel-title" aria-expanded="false">
+          <?php print render($content['field_mapimg']);?>
+            <h2><?php print $node->title?></h2>
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsenode-<?php print $node->nid; ?>" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+        </a>
+      </h4>
+      </div>
+      <div id="collapsenode-<?php print $node->nid; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+   <div class="panel-body single-item">
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
@@ -108,12 +128,20 @@
     <div class="trans">
   <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php print render($content['body']);?>
+  <?php print render($content['field_maplayout']); ?>
     </div>
+    <a  class="zatvori" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsenode-<?php print $node->nid; ?>" aria-expanded="true" aria-controls="collapseOne">
+    <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>
     <?php print render($content['links']); ?>
   </footer>
   <?php endif; ?>
-
 </article>
+</div>
+</div>
+</div>
+</div>
+</div>

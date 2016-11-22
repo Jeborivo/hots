@@ -80,6 +80,7 @@
  */
   $klasa = field_get_items("node",$node,"field_universe");
   $role = field_get_items("node",$node,"field_role");
+  $free = field_get_items("node",$node,"field_rotation");
 ?>
 
 <div class="<?php print $klasa[0]['entity']->title ?> <?php print $role[0]['entity']->title ?> grid-item">
@@ -105,10 +106,12 @@
     print render($content['field_list']);
     hide($content['field_universe']);
     print render($content['field_role']);
-
   ?>
   <h2<?php print $title_attributes; ?>
   class="col-sm-6"><?php print $title; ?></h2>
+  <div class=" free-<?php print $free[0]['tid']?>">
+<?php print render($content['field_freeimg']);?>
+  </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
   </footer>
