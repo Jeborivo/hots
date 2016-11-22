@@ -1,6 +1,5 @@
 
 <?php
-
 /**
  * @file
  * Default simple view template to display a list of rows.
@@ -8,8 +7,6 @@
  * @ingroup views_templates
  */
 ?>
-
-CAO CAO CAO
 <script type="text/javascript">
  jQuery(document).ready(function ($) {
    $('.news-slide').slick({
@@ -24,8 +21,6 @@ CAO CAO CAO
     });;
  });
 </script>
-
-
 <div class="news-slide">
 <?php foreach ($rows as $id => $row): ?>
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>

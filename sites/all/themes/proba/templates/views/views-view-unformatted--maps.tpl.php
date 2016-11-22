@@ -11,6 +11,7 @@
  //         scrollTop: $(".Battlefield").offset().top},
  //         'slow');
 ?>
+LLMASKDJASJDAJSDJASJDAJSDJASJD
 <script>
 jQuery(document).ready(function($) {
     $("button").click(function(event) {
@@ -21,6 +22,7 @@ jQuery(document).ready(function($) {
                  'slow');
     });
 });
+
 </script>
 <div data-spy="affix" class="dugmici affix " data-offset-top="400">
 <button data-attr-scroll=".Warhead"><img src="sites/default/files/pictures//ikonice/warhead.png"/></button>
