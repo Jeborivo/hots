@@ -7313,9 +7313,14 @@ body {
 .region-map .affix {
   top: 0px;
   width: 1400px;
-  left: 250px;
+  left: 10%;
   transition: 1;
   z-index: 100;
+}
+@media (max-width: 1500px) {
+  .region-map .affix {
+    left: 5%;
+  }
 }
 .region-map .node-map {
   position: relative;
