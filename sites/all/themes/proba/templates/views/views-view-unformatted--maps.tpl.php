@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
     });
 });
 </script>
-<div data-spy="affix" class="dugmici affix " data-offset-top="400">
+<div data-spy="affix" class="dugmici affix " data-offset-top="325">
 <button data-attr-scroll=".Warhead"><img src="sites/default/files/pictures//ikonice/warhead.png"/></button>
 <button data-attr-scroll=".Braxis"><img src="sites/default/files/pictures//ikonice/braxis.png"/></button>
 <button data-attr-scroll=".Dragon"><img src="sites/default/files/pictures//ikonice/dragon.png"/></button>
