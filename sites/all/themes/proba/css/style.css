@@ -7293,6 +7293,7 @@ body {
 }
 .region-map .dugmici {
   positon: fixed;
+  height: 100px;
   top: 375px;
   width: 100%;
   margin: 0 auto;
@@ -7302,14 +7303,24 @@ body {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0);
   color: white;
+  margin-right: 15px;
+  width: 65px;
+  height: 65px;
   border-style: none;
+}
+.region-map .dugmici button p {
+  display: none;
+}
+.region-map .dugmici button:hover > p {
+  display: block;
+  overflow: visible;
 }
 .region-map .dugmici button img {
   height: 60px;
   width: 60px;
 }
-.region-map .dugmici button:hover {
-  background: radial-gradient(circle 40px, #1EC4ED 0%, transparent 85%);
+.region-map .dugmici button img:hover {
+  background: radial-gradient(circle 40px, #1EC4ED 30%, transparent 85%);
 }
 .region-map .dugmici button:focus {
   outline-style: none;
@@ -7494,17 +7505,14 @@ body {
   width: 400px;
   height: 300px;
 }
-.region-map .view-content .views-row h2 a {
+.region-map .view-content .views-row h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 34px;
   font-family: gothic;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 0 3px blue;
   font-weight: 900;
-}
-.region-map .view-content .views-row h2 a:hover {
-  text-decoration: none;
 }
 .heroes-page .button-group button {
   height: 40px;
