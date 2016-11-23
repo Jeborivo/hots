@@ -7505,6 +7505,11 @@ body {
   width: 400px;
   height: 300px;
 }
+@media (max-width: 1265px) {
+  .region-map .view-content .views-row .trans {
+    font-size: 16px;
+  }
+}
 .region-map .view-content .views-row h2 {
   text-align: center;
   font-size: 34px;
