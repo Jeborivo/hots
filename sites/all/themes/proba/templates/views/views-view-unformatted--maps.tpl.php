@@ -23,6 +23,8 @@ jQuery(document).ready(function($) {
 });
 </script>
 <div data-spy="affix" class="dugmici affix " data-offset-top="325">
+<button data-attr-scroll=".Bay"><img src="sites/default/files/pictures//ikonice/blackheart.png"/><p>Blackheart's Bay</p></button>
+<button data-attr-scroll=".Cursed"><img src="sites/default/files/pictures//ikonice/cursed.png"/><p>Cursed Hollow</p></button>
 <button data-attr-scroll=".Warhead"><img src="sites/default/files/pictures//ikonice/warhead.png"/><p>Warhead Junction</p></button>
 <button data-attr-scroll=".Braxis"><img src="sites/default/files/pictures//ikonice/braxis.png"/><p>Braxis Holdout</p></button>
 <button data-attr-scroll=".Dragon"><img src="sites/default/files/pictures//ikonice/dragon.png"/><p>Dragon Shire</p></button>
@@ -33,8 +35,6 @@ jQuery(document).ready(function($) {
 <button data-attr-scroll=".Haunted"><img src="sites/default/files/pictures//ikonice/haunted.png"/><p>Haunted Mines</p></button>
 <button data-attr-scroll=".Towers"><img src="sites/default/files/pictures//ikonice/towers.png"/><p>Towers of Doom</p></button>
 <button data-attr-scroll=".Battlefield"><img src="sites/default/files/pictures//ikonice/battlefield.png"/><p>Battlefield</p></button>
-<button data-attr-scroll=".Cursed"><img src="sites/default/files/pictures//ikonice/cursed.png"/><p>Cursed Hollow</p></button>
-<button data-attr-scroll=".Cursed"><img src="sites/default/files/pictures//ikonice/blackheart.png"/><p>Blackhearts Bay</p></button>
 
 </div>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

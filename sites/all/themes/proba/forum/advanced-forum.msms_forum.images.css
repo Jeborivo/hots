@@ -13,13 +13,13 @@
 tr.even td.forum-list-icon-default .forum-list-icon-wrapper span,
 tr.odd td.forum-list-icon-default .forum-list-icon-wrapper span,
 .forum-list-icon-legend .forum-list-icon-default {
-    display:none!important;
+    display:block!important;
 }
 
 tr.even td.forum-list-icon-new-posts .forum-list-icon-wrapper span,
 tr.odd td.forum-list-icon-new-posts .forum-list-icon-wrapper span,
 .forum-list-icon-legend .forum-list-icon-new-posts {
-  display:none!important;
+  display:block!important;
 }
 
 /* TOPIC LIST ICONS *********************************************************/
@@ -30,57 +30,57 @@ span.topic-icon {
 }
 
 .topic-icon-default {
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-new {
 
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-hot {
 
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-hot-new {
 
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-sticky {
 
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-closed {
 
-  display:none!important;
+  display:block!important;
 }
 
 /* TOPIC LIST ICON LEGEND ***************************************************/
 .topic-icon-default {
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-new {
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-hot {
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-hot-new {
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-sticky {
-  display:none!important;
+  display:block!important;
 }
 
 .topic-icon-closed {
-  display:none!important;
+  display:block!important;
 }
 
 /* AUTHOR PANE **************************************************************/
@@ -244,7 +244,7 @@ a.author-pane-link:visited {
   padding: 3px 2px 3px 30px;
 }
 .forum-list-text-legend-new-posts{
-  display:none;
+  display:block;
 }
 .topic-post-count{
   color:white;
@@ -253,13 +253,13 @@ a.author-pane-link:visited {
   color:white;
 }
 .panel-body{
-  display:none;
+  display:block;
 }
 .block-user{
-  display:none;
+  display:block;
 }
 .topic-reply-link{
-  
+
   color:white;
 }
 .forum-node-create-links{
