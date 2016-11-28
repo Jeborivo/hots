@@ -209,10 +209,11 @@ div.forum-post {
 /* Header at the top of each post */
 .forum-post-info {
   border-top: 1px solid #464646;
-  background:#143366;
+  background: linear-gradient(#2c2c2c,#3e3d3d);
   color: #ffffff;
   font-weight: bold;
   border-bottom: 1px solid #464646;
+
 }
 
 .forum-posted-on {
@@ -229,7 +230,8 @@ div.forum-post {
 
 /* Wrapper around author pane and content */
 .forum-post-wrapper {
-  background-color:white;
+  border-top: 1px solid greenyellow;
+  background-color:#2c2c2c;
 }
 
 /* Author information pane */
@@ -248,20 +250,34 @@ div.forum-post {
 
 /* Post text area */
 .forum-post-panel-main {
-  background-color: #FFFFFF;
+
   border-left: 1px solid #464646;
+  color:white;
+  background: linear-gradient(#3e3d3d,#2c2c2c);
+  border-left:  1px solid greenyellow;
 }
 
 .forum-post-title {
   font-weight: bold;
   border-bottom: 1px solid #464646;
-  background-color: white;
+  background-color: #2c2c2c;
+  border-bottom:  1px solid greenyellow;
 }
 
 /* Post footer */
 .forum-post-footer {
-  border-top: 1px solid #464646;
-  background-color: white;
+  border-top: 1px solid greenyellow;
+  background: linear-gradient(#2c2c2c,#3e3d3d);
+
+}
+.forum-post-footer span {
+   color:greenyellow;
+      padding-left: 30px;
+
+
+ }
+.comment-add a span{
+  padding-left: 30px!important;
 }
 
 /* Box under top post before first reply */
@@ -331,5 +347,8 @@ div.forum-post {
   display: none;
 }
 .breadcrumb{
+display: none;
+}
+.forum-list-icon-legend{
 display: none;
 }
