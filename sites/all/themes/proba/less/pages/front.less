@@ -82,26 +82,27 @@ li{
   }
 }
   .logregister{
-    @media (max-width:1024px){
-display:none;
-  }
+
     // background-color: red;
     // width:300px;
-    // position: fixed;;;
-    margin-right:  -100px;
+    // position: fixed;;
   }
-  .affix{
-    top: 5px;
-    right: 382px;
-    width: 100px;
-    transition: 1;
-        @media (max-width:1024px){
-    display:none;
-      }
-  }
+
   .desno{
-    width: 56px;
+
+    text-align: center;
+    width: 100px;
     float: right;
+
+      a{
+        color:white;
+        text-decoration:none;
+        text-transform: uppercase;
+        font-style:bold;
+        &:hover{
+          color: greenyellow;
+        }
+      }
   }
   // *************************************************za news article*************************************************************************
   .titl h2{
@@ -202,4 +203,12 @@ display:none;
   top:16%;
   left:3%;
   font-size: 16px;
+}
+#first-time {
+  p{
+    display:none;
+  }
+  ul{
+    display: none;
+  }
 }

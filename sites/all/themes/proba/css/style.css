@@ -7173,28 +7173,19 @@ body {
 .hero .view-latest-news {
   margin-bottom: 30px;
 }
-.logregister {
-  margin-right: -100px;
-}
-@media (max-width: 1024px) {
-  .logregister {
-    display: none;
-  }
-}
-.affix {
-  top: 5px;
-  right: 382px;
-  width: 100px;
-  transition: 1;
-}
-@media (max-width: 1024px) {
-  .affix {
-    display: none;
-  }
-}
 .desno {
-  width: 56px;
+  text-align: center;
+  width: 100px;
   float: right;
+}
+.desno a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: bold;
+}
+.desno a:hover {
+  color: greenyellow;
 }
 .titl h2 {
   color: #D6ECF5;
@@ -7291,6 +7282,12 @@ body {
   left: 3%;
   font-size: 16px;
 }
+#first-time p {
+  display: none;
+}
+#first-time ul {
+  display: none;
+}
 .region-map .dugmici {
   positon: fixed;
   height: 100px;
@@ -7340,7 +7337,7 @@ body {
   border-style: none;
 }
 .region-map .panel-heading {
-  background-color: #00004D;
+  background: linear-gradient(#2a0342, #0a0010);
   position: relative;
 }
 .region-map .panel-heading a {
@@ -7386,7 +7383,7 @@ body {
   height: 300px;
 }
 .region-map .panel-body {
-  background-color: #00004D;
+  background: linear-gradient(#0a0010, #2a0342);
   border-style: none;
 }
 .region-map .panel-body .zatvori {

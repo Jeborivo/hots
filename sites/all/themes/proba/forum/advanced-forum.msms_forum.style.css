@@ -28,7 +28,7 @@ see advanced_forum-structure.css.
   border:1px solid greenyellow;
   color:white;
   width: 100%;
-  background: linear-gradient(#2f4657,#1c2a34);
+  background: linear-gradient(#2c2c2c,#3e3d3d);
   padding: 20px;
   overflow: auto;
   zoom: 1;
@@ -76,7 +76,7 @@ see advanced_forum-structure.css.
 /* Table name and description on forum list and table header on topic list */
 .forum-table-wrap .forum-table-superheader,
 .forum-table-topics thead tr  {
-  background:linear-gradient(#2f4657,#1c2a34);
+  background:linear-gradient(#2c2c2c,#3e3d3d);
   border:1px solid greenyellow  ;
   color: #e3e3e3;
 }
@@ -175,7 +175,7 @@ see advanced_forum-structure.css.
     border-left : 1px solid greenyellow;
       border-right: 1px solid greenyellow;
   /*border-top: 1px solid #464646;*/
-    background:linear-gradient(#2f4657,#1c2a34);
+    background:linear-gradient(#3e3d3d,#2c2c2c);
   color: #ffffff;
   font-weight: bold;
   /*border-bottom: 1px solid #464646;*/
