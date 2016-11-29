@@ -136,11 +136,11 @@
  </div>
 <div class="herocomment">
   <?php
-  print render($content['comments']);
-  print render($content['links']);
-  print render($content['field_tags']);
-
-
+  hide($content['comments']);
+  hide($content['links']);
+  hide($content['field_tags']);
+  print drupal_render(drupal_get_form("comment_node_hero_form",
+  (object) array('nid' => $node->nid)));
   ?>
 </div>
 </div>
