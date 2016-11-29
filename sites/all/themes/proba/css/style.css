@@ -7293,7 +7293,7 @@ body {
 }
 .footer {
   width: 100%;
-  height: 220px;
+  height: 180px;
   color: white;
   background-color: greenyellow;
   border-top: 2px solid #337AB7;
@@ -7303,9 +7303,12 @@ body {
   display: none;
 }
 .footer p {
-  margin-top: 100px;
+  margin-top: 80px;
   font-weight: bolder;
   text-align: center;
+}
+.block-system {
+  color: white;
 }
 .region-map .dugmici {
   positon: fixed;
@@ -7487,7 +7490,7 @@ body {
 .region-map .view-content .views-row .pref-heroes img {
   display: inline-block;
   width: 100px;
-  border-radius: 50%;
+  border-radius: 20%;
   border: 2px solid rebeccapurple;
 }
 .region-map .view-content .views-row .pref-heroes img:hover {

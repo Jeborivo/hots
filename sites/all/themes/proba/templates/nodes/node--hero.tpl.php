@@ -139,6 +139,8 @@
   print render($content['comments']);
   print render($content['links']);
   print render($content['field_tags']);
+
+
   ?>
 </div>
 </div>

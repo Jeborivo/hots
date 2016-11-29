@@ -25,7 +25,7 @@ see advanced_forum-structure.css.
 /*** PAGER *******************************************************************/
 .pane-forum-topic-legend,
 .pane-forum-topic-list-sort{
-  border:1px solid greenyellow;
+  border:1px solid #30CCEA;
   color:white;
   width: 100%;
   background: linear-gradient(#2c2c2c,#3e3d3d);
@@ -77,7 +77,7 @@ see advanced_forum-structure.css.
 .forum-table-wrap .forum-table-superheader,
 .forum-table-topics thead tr  {
   background:linear-gradient(#2c2c2c,#3e3d3d);
-  border:1px solid greenyellow  ;
+  border:1px solid #30CCEA  ;
   color: #e3e3e3;
 }
 
@@ -98,7 +98,8 @@ see advanced_forum-structure.css.
 .forum-table-wrap thead tr {
     background:linear-gradient(#2c2c2c,#3e3d3d);
     color:white;
-    border:1px solid greenyellow;
+    border:1px solid #30CCEA;
+    border-top: none;
   /*border: 1px solid #e6f7ff;*/
 }
 
@@ -123,7 +124,7 @@ see advanced_forum-structure.css.
   border: none; /* reset */
   /*border-top: 1px solid #575757;*/
   background-color: #2c2c2c;
-  border:1px solid greenyellow  ;
+  border:1px solid #30CCEA  ;
   color:white;
 }
 .page-forum  .tabs--primary a, .page-forum .block-system  a{
@@ -171,9 +172,9 @@ see advanced_forum-structure.css.
 }
 
 #forum-statistics-header {
-  border-top: 1px solid greenyellow;
-    border-left : 1px solid greenyellow;
-      border-right: 1px solid greenyellow;
+  border-top: 1px solid #30CCEA;
+    border-left : 1px solid #30CCEA;
+      border-right: 1px solid #30CCEA;
   /*border-top: 1px solid #464646;*/
     background:linear-gradient(#3e3d3d,#2c2c2c);
   color: #ffffff;
@@ -183,8 +184,8 @@ see advanced_forum-structure.css.
 }
 
 .forum-statistics-sub-header {
-  border-left : 1px solid greenyellow;
-    border-right: 1px solid greenyellow;
+  border-left : 1px solid #30CCEA;
+    border-right: 1px solid #30CCEA;
   background: linear-gradient(#2c2c2c,#3e3d3d);
   font-weight: bold;
   color:white;
@@ -193,7 +194,7 @@ see advanced_forum-structure.css.
   display:none;
 }
 .forum-statistics-sub-body {
-  border:1px solid greenyellow;
+  border:1px solid #30CCEA;
   background-color: #2c2c2c;
   padding: 5px 10px;
   color:white;
@@ -230,7 +231,7 @@ div.forum-post {
 
 /* Wrapper around author pane and content */
 .forum-post-wrapper {
-  border-top: 1px solid greenyellow;
+  border-top: 1px solid #30CCEA;
   background-color:#2c2c2c;
 }
 
@@ -254,24 +255,24 @@ div.forum-post {
   border-left: 1px solid #464646;
   color:white;
   background: linear-gradient(#3e3d3d,#2c2c2c);
-  border-left:  1px solid greenyellow;
+  border-left:  1px solid #30CCEA;
 }
 
 .forum-post-title {
   font-weight: bold;
   border-bottom: 1px solid #464646;
   background-color: #2c2c2c;
-  border-bottom:  1px solid greenyellow;
+  border-bottom:  1px solid #30CCEA;
 }
 
 /* Post footer */
 .forum-post-footer {
-  border-top: 1px solid greenyellow;
+  border-top: 1px solid #30CCEA;
   background: linear-gradient(#2c2c2c,#3e3d3d);
 
 }
 .forum-post-footer span {
-   color:greenyellow;
+   color:#30CCEA;
       padding-left: 30px;
 
 
@@ -352,3 +353,6 @@ display: none;
 .forum-list-icon-legend{
 display: none;
 }
+.comment-reply a span{
+   padding-left: 30px!important;
+ }
