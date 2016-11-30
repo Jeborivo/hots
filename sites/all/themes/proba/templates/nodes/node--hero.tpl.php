@@ -81,7 +81,12 @@
  $subname = field_get_items("node",$node,"field_sub_name");
 
  ?>
+<script>
+jQuery(function($){
+  $('.collapse').collapse()
+});
 
+ </script>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
@@ -134,15 +139,33 @@
  <div class="countered col-sm-6">
    <?php print render($content['field_countered']);?>
  </div>
-<div class="herocomment">
-  <?php
-  hide($content['comments']);
-  hide($content['links']);
-  hide($content['field_tags']);
-  print drupal_render(drupal_get_form("comment_node_hero_form",
-  (object) array('nid' => $node->nid)));
-  ?>
+
+ <div class="panel-group fixcomm affix" id="accordion" role="tablist" aria-multiselectable="true" data-spy="affix" data-offset-top="1250">
+   <div class="panel panel-default">
+     <div class="panel-heading" role="tab" id="headingOne">
+       <h4 class="panel-title">
+         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Post a comment here
+          </a>
+    </h4>
+  </div>
+  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+     <div class="panel-body">
+  <div class="herocomment">
+    <?php
+    hide($content['comments']);
+    hide($content['links']);
+    hide($content['field_tags']);
+    print drupal_render(drupal_get_form("comment_node_hero_form",
+    (object) array('nid' => $node->nid)));
+    ?>
+  </div>
 </div>
+</div>
+</div>
+</div>
+
 </div>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
