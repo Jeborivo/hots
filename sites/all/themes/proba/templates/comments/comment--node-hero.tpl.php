@@ -58,8 +58,9 @@
  *
  * @ingroup themeable
  */
+ $depth=$comment->depth;
 ?>
-<div class="<?php print $classes; ?> clearfix herokomentar"<?php print $attributes; ?>>
+<div class="indent-<?php if ($depth>4) echo ("5"); else echo $depth ?> clearfix herokomentar">
 <div class="userimage col-md-2">  <?php print $picture ?> </div>
 <div class="col-md-6">
   <div class="member">

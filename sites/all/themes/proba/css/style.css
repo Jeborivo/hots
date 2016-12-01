@@ -7088,7 +7088,8 @@ button.close {
 }
 .commentarea {
   color: #bce8f1;
-  font-size: 14px;
+  font-size: 16px;
+  width: 400px;
 }
 .submitted {
   color: red;
@@ -7096,8 +7097,18 @@ button.close {
 .submitted a {
   text-decoration: none;
 }
+.user-picture {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.member {
+  margin-top: 20px;
+}
 .member h2 {
-  color: #337ab7;
+  color: rebeccapurple;
+  position: absolute;
+  bottom: 15px;
+  left: -181px;
 }
 .new {
   color: red;
@@ -7128,6 +7139,21 @@ button.close {
 }
 .text-center {
   margin-top: 200px;
+}
+.indent-1 {
+  margin-left: 25px;
+}
+.indent-2 {
+  margin-left: 50px;
+}
+.indent-3 {
+  margin-left: 75px;
+}
+.indent-4 {
+  margin-left: 100px;
+}
+.indent-5 {
+  margin-left: 100px;
 }
 .glava {
   background-image: url('../images/boba.jpg');
@@ -7508,6 +7534,12 @@ body {
   left: 34%;
   width: 500px;
   height: 300px;
+}
+.region-map .view-content .views-row .pref-heroes h4 {
+  color: greenyellow;
+  text-transform: uppercase;
+  font-family: arial, sans-serif;
+  text-shadow: 0 0 5px rebeccapurple;
 }
 .region-map .view-content .views-row .pref-heroes .field-item {
   margin-bottom: 10px;

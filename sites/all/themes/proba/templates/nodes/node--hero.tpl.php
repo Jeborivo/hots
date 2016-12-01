@@ -140,7 +140,7 @@ jQuery(function($){
    <?php print render($content['field_countered']);?>
  </div>
 
- <div class="panel-group fixcomm affix" id="accordion" role="tablist" aria-multiselectable="true" data-spy="affix" data-offset-top="1250">
+ <div class="panel-group fixcomm affix" id="accordion" role="tablist" aria-multiselectable="true" data-spy="affix" data-offset-top="100">
    <div class="panel panel-default">
      <div class="panel-heading" role="tab" id="headingOne">
        <h4 class="panel-title">

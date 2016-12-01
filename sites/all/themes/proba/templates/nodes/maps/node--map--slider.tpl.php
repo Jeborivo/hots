@@ -123,6 +123,7 @@ jQuery(function ($) {
     print render($content['field_image']);
   ?>
   <div class="pref-heroes">
+    <h4> Heroes good on this map </h4>
   <?php print render($content['field_preferred_hero']);?>
 </div>
     <div class="trans">
