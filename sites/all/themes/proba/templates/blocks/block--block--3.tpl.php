@@ -45,14 +45,46 @@
  * @ingroup templates
  */
 ?>
-OVO JE BLOCK--BLOCK--1.tpl.php
 
-<section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<section id="<?php print $block_html_id; ?>" class="blokcina clearfix"<?php print $attributes; ?>>
+  <!-- <label>Your name:
+  <input type="text" id="ajaxTextbox" />
+</label>
+  <span id="ajaxButton" style="cursor: pointer; text-decoration: underline">
+    Make a request
+  </span>
+  <script type="text/javascript">
 
-  <?php print render($title_prefix); ?>
+  (function() {
+    var httpRequest;
+    document.getElementById("ajaxButton").onclick = function() {
+    var userName = document.getElementById("ajaxTextbox").value;
+    makeRequest('ob.php',userName);
+};
+function makeRequest(url, userName) {
+      httpRequest = new XMLHttpRequest();
 
-  <?php print render($title_suffix); ?>
+      if (!httpRequest) {
+        alert('Giving up :( Cannot create an XMLHTTP instance');
+        return false;
+      }
+      httpRequest.onreadystatechange = alertContents;
+     httpRequest.open('POST', url);
+     httpRequest.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+     httpRequest.send('userName=' + encodeURIComponent(userName));
+    }
 
+    function alertContents() {
+      if (httpRequest.readyState === XMLHttpRequest.DONE) {
+        if (httpRequest.status === 200) {
+          var response = JSON.parse(httpRequest.responseText);
+          alert(response.computedString);
+        } else {
+          alert('There was a problem with the request.');
+        }
+      }
+    }
+  })();
+  </script> -->
   <?php print $content ?>
-
 </section>

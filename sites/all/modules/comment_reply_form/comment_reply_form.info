@@ -1,0 +1,7 @@
+name = Comment_reply_form 
+description = Test
+core = 7.x 
+
+
+
+package = Test

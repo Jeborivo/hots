@@ -7155,6 +7155,9 @@ button.close {
 .indent-5 {
   margin-left: 100px;
 }
+.blokcina {
+  background-color: red;
+}
 .glava {
   background-image: url('../images/boba.jpg');
   background-size: cover;
@@ -7432,9 +7435,10 @@ body {
   text-decoration: none;
 }
 .region-map .panel-heading h2 {
+  width: 100%;
   position: absolute;
   top: 5%;
-  left: 45%;
+  left: 0;
   color: #D6ECF5;
   font-size: 34px;
   text-transform: uppercase;

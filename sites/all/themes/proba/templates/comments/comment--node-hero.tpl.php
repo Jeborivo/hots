@@ -1,4 +1,4 @@
-<?php
+g<?php
 
 /**
  * @file
@@ -59,13 +59,26 @@
  * @ingroup themeable
  */
  $depth=$comment->depth;
-?>
+ $nid=$comment->nid;
+ $cid=$comment->cid;
+drupal_add_js('sites/all/themes/proba/js/test.js');
+
+  ?>
+
+<p id="reply-id" >bla<?php print $nid; ?>/<?php print $cid; ?> </p>
+<div id="forma"> </div>
+<span id="hello"> </span>
+<button name="button" data-cid="<?php print $cid;?>" data-nid="<?php print $nid;?>" id="button" > Reply </button>
+<script>
+// PERA BOG
+</script>
 <div class="indent-<?php if ($depth>4) echo ("5"); else echo $depth ?> clearfix herokomentar">
-<div class="userimage col-md-2">  <?php print $picture ?> </div>
+<div class="userimage col-md-2">  <?php print $picture ?></div>
 <div class="col-md-6">
   <div class="member">
   <h2><?php print check_plain($comment->name)?></h2>
 </div>
+<?php dsm($comment); ?>
   <?php if ($new): ?>
     <span class="new">New</span>
   <?php endif; ?>
@@ -74,6 +87,7 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
       print render($content);
+       echo ($cid);
     ?>
     <?php if ($signature): ?>
     <div class="user-signature clearfix ">

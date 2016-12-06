@@ -1,0 +1,55 @@
+<?php
+/**
+ * Implements hook_help().
+ *
+ * Displays help and module information.
+ *
+ * @param path
+ *   Which path of the site we're using to display help
+ * @param arg
+ *   Array that holds the current path as returned from arg() function
+ */
+function comment_reply_form_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#comment_reply_form":
+      return '' . t("testing testing 1 2 3") . '';
+      break;
+  }
+}
+function comment_reply_form_init() {
+  drupal_add_js(drupal_get_path('module', 'comment_reply_form') .'/js/comment_reply_form.js');
+}
+/**
+ * Implements hook_block_info().
+ */
+function comment_reply_form_block_info() {
+  $blocks['comment_reply_form_block'] = array(
+    // The name that will appear in the block list.
+    'info' => t('comment reply form'),
+    // Default setting.
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+  return $blocks;
+}
+function comment_reply_form_menu() {
+  $items['get/ajax/comment'] = array(
+    'page callback' => 'comment_reply_form_ajax_get_ajax', // Render HTML.
+    // 'page arguments' => array(3),
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('access content'),
+    'delivery callback' => 'comment_reply_form_ajax_callback',  // Magic goes here.
+  );
+  return $items;
+}
+function comment_reply_form_ajax_get_ajax() {
+  // The function will receive the array of arguments after the "get/ajax" prefix
+  $path = implode('/', func_get_args());
+  $render_string = menu_execute_active_handler($path, FALSE);
+  return $render_string;
+}
+
+
+function comment_reply_form_ajax_callback($page_callback_result) {
+  // Only render content and validates return
+  $content = is_string($page_callback_result) ? $page_callback_result : drupal_render($page_callback_result);
+  $html = '' . drupal_get_css() . drupal_get_js() . '' . $content . ''; print $html; drupal_page_footer(); }
