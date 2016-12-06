@@ -8,7 +8,11 @@
     font-size: 18px;
     .nav-bar
     li+{
+      &:first-child {
+        border-left: 2px solid #337ab7;
+      }
        border: 2px solid #337ab7;
+       border-left: none;
       // border-left: 2px solid blue;
       // border-right: 2px solid blue;
       text-transform: uppercase;
@@ -25,6 +29,13 @@
     a:hover{
       background:radial-gradient(ellipse at bottom,#2A1A73 40%,transparent 85%);
     }
+    }
+    .secondary {
+      li {
+        &:first-child {
+          border-left: none;
+        }
+      }
     }
   }
 }

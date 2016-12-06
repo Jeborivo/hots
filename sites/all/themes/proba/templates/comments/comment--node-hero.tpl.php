@@ -78,7 +78,6 @@ drupal_add_js('sites/all/themes/proba/js/test.js');
   <div class="member">
   <h2><?php print check_plain($comment->name)?></h2>
 </div>
-<?php dsm($comment); ?>
   <?php if ($new): ?>
     <span class="new">New</span>
   <?php endif; ?>

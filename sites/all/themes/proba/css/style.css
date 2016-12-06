@@ -7167,7 +7167,11 @@ button.close {
 }
 .glava .container .nav-bar li {
   border: 2px solid #337ab7;
+  border-left: none;
   text-transform: uppercase;
+}
+.glava .container .nav-bar li:first-child {
+  border-left: 2px solid #337ab7;
 }
 .glava .container .nav-bar li a {
   color: #D6ECF5;
@@ -7181,6 +7185,9 @@ button.close {
 }
 .glava .container .nav-bar li a:hover {
   background: radial-gradient(ellipse at bottom, #2A1A73 40%, transparent 85%);
+}
+.glava .container .secondary li:first-child {
+  border-left: none;
 }
 .nav-bar li a {
   padding: 10px 50px;
@@ -7532,6 +7539,7 @@ body {
   width: 100%;
 }
 .region-map .view-content .views-row .pref-heroes {
+  text-align: center;
   display: inline-block;
   position: absolute;
   top: 12%;
@@ -7574,7 +7582,7 @@ body {
   font-weight: 900;
   font-size: 24px;
   z-index: 12;
-  width: 500px;
+  width: 440px;
   height: 530px;
   position: absolute;
   top: 5%;
@@ -7589,6 +7597,9 @@ body {
     font-size: 16px;
   }
 }
+.region-map .view-content .views-row .trans p {
+  font-size: 20px;
+}
 .region-map .view-content .views-row h2 {
   text-align: center;
   font-size: 34px;
@@ -7597,6 +7608,9 @@ body {
   color: #fff;
   text-shadow: 0 0 3px blue;
   font-weight: 900;
+}
+.heroes-page footer {
+  margin-top: 100px;
 }
 .heroes-page .button-group button {
   height: 40px;
@@ -7631,7 +7645,7 @@ body {
 .heroes-page .role {
   width: 100px;
   position: absolute;
-  top: 200px;
+  top: 300px;
 }
 .heroes-page .role img {
   float: left;
@@ -7654,7 +7668,7 @@ body {
   width: 230px;
 }
 .heroes-page .field img {
-  border: 3px solid #0A0010;
+  border: 2px solid #337AB7;
   margin: auto;
   transition-duration: 1s;
 }
@@ -7667,7 +7681,7 @@ body {
 .heroes-page .field h2 {
   width: 50%;
   position: absolute;
-  top: 215px;
+  top: 320px;
   left: 86px;
   text-transform: uppercase;
   color: #D6ECF5;
