@@ -78,20 +78,14 @@
  *
  * @ingroup templates
  */
- $subname = field_get_items("node",$node,"field_sub_name");
- $nodenid =$node->nid;
- ?>
-<script>
-jQuery(function($){
-  $('.collapse').collapse()
-});
-
- </script>
+?>
+<div class="proba-tpl">
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
   <header>
     <?php print render($title_prefix); ?>
     <?php if (!$page && !empty($title)): ?>
+    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
     <?php if ($display_submitted): ?>
@@ -104,71 +98,15 @@ jQuery(function($){
   <?php endif; ?>
   <?php
     // Hide comments, tags, and links now so that we can render them later.
-  ?>
-   <div class="video" >
-     <div class="margin-auto ">
-     <video
-        src="http://media.blizzard.com/heroes/videos/heroes/skins/<?php print $subname[0]['value'] ?>"
-         playsinline autoplay muted loop type="video/webm" >
-      </video>
-    </div>
-           <div class="test col-md-6">
-             <div class="drzac">
-             <div class="row">
-
-               <div class="col-sm-3 notext">
-
-                  <?php print render($content['field_universe'])?>
-
-              </div>
-                <h2<?php print $title_attributes; ?>
-                class="col-sm-6"><?php print $title; ?></h2>
-             </div>
-             <?php print render($content['body']);?>
-           </div>
-           <div class="herorole">
-             <?php print render($content['field_role'])?>
-           </div>
-             <?php print render($content['field_hero_icon']);?>
-           </div>
-     </div>
-<div class="probahero">
- <div class="synergize col-sm-6">
-   <?php print render($content['field_synergizes']);?>
- </div>
- <div class="countered col-sm-6">
-   <?php print render($content['field_countered']);?>
- </div>
-
- <div class="panel-group fixcomm affix" id="accordion" role="tablist" aria-multiselectable="true" data-spy="affix" data-offset-top="100">
-   <div class="panel panel-default">
-     <div class="panel-heading" role="tab" id="headingOne">
-       <h4 class="panel-title">
-         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Post a comment here
-          </a>
-    </h4>
-  </div>
-  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-     <div class="panel-body">
-  <div class="herocomment">
-    <?php
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_tags']);
-    print drupal_render(drupal_get_form("comment_node_hero_form",
-    (object) array('nid' => $nodenid)));
-    ?>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
+    print render($content);
+  ?>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
+    <?php print render($content['field_tags']); ?>
   </footer>
   <?php endif; ?>
 </article>
+</div>

@@ -54,7 +54,7 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <link href="//db.onlinewebfonts.com/c/faad0ba276c65d3b9f879a91b0a779c5?family=DecimaNovaW01-Bold" rel="stylesheet" type="text/css"/>
+  <link href="https://db.onlinewebfonts.com/c/faad0ba276c65d3b9f879a91b0a779c5?family=DecimaNovaW01-Bold" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>

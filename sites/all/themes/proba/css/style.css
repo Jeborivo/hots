@@ -6768,14 +6768,25 @@ button.close {
   height: 305px;
 }
 .probateas {
+  text-align: center;
   position: relative;
 }
 .trim {
+  text-align: center;
   position: absolute;
   top: 230px;
   border-top: 2px solid #3c75b9;
   background-color: rgba(62, 33, 91, 0.5);
   height: 70px;
+}
+.proba-tpl .field-type-image {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.proba-tpl .field-type-text-with-summary {
+  color: #d6ecf5;
+  font-size: 17px;
 }
 .views-field-value-2 img {
   width: 50px;
@@ -7198,7 +7209,11 @@ button.close {
   overflow: hidden;
 }
 body {
+  font-family: DecimaNovaW01-Bold !important;
   background-color: #0A0010;
+}
+body a {
+  font-family: DecimaNovaW01-Bold !important;
 }
 .margin-bottom {
   margin-bottom: 10px;
@@ -7332,6 +7347,7 @@ body {
   font-weight: 700;
 }
 .rotation .slick-track h2 a {
+  margin-left: 30px;
   color: #D6ECF5;
   text-decoration: none;
 }
@@ -7343,8 +7359,8 @@ body {
   position: absolute;
   width: 200px;
   top: 16%;
-  left: 3%;
-  font-size: 16px;
+  left: 5%;
+  font-size: 20px;
 }
 #first-time p {
   display: none;
@@ -7588,7 +7604,35 @@ body {
   top: 5%;
   margin-left: 86px;
 }
+.region-map .view-content .views-row .trans .field .field-label {
+  display: none;
+}
+.region-map .view-content .views-row .trans .layouttitle {
+  text-transform: uppercase;
+  font-size: 24px;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 200%;
+}
+.region-map .view-content .views-row .trans .features {
+  margin: 0 auto;
+}
+.region-map .view-content .views-row .trans .features .field .field-items {
+  margin-top: 170px;
+  margin-left: 110px;
+  text-align: center;
+  width: 900px;
+}
+.region-map .view-content .views-row .trans .features .field .field-items .field-item {
+  width: 270px;
+  display: inline-block;
+}
 .region-map .view-content .views-row .trans img {
+  position: absolute;
+  top: 15%;
+  left: 180%;
   width: 400px;
   height: 300px;
 }
@@ -7603,7 +7647,6 @@ body {
 .region-map .view-content .views-row h2 {
   text-align: center;
   font-size: 34px;
-  font-family: gothic;
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 0 3px blue;
@@ -7668,7 +7711,7 @@ body {
   width: 230px;
 }
 .heroes-page .field img {
-  border: 2px solid #337AB7;
+  border: 3px solid black;
   margin: auto;
   transition-duration: 1s;
 }
