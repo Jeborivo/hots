@@ -66,7 +66,7 @@ drupal_add_js('sites/all/themes/proba/js/test.js');
   ?>
 
 <p id="reply-id" >bla<?php print $nid; ?>/<?php print $cid; ?> </p>
-<div id="forma"> </div>
+<div id="forma-<?php print $cid; ?>"> </div>
 <span id="hello"> </span>
 <button name="button" data-cid="<?php print $cid;?>" data-nid="<?php print $nid;?>" id="button" > Reply </button>
 <script>
