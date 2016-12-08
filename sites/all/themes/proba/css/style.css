@@ -7433,9 +7433,6 @@ body a {
 .block-locale h2 {
   display: none;
 }
-.contextual-links-region h2 {
-  display: none!important;
-}
 .language-switcher-locale-url {
   transform: translateY(-45px);
   width: 50px;
