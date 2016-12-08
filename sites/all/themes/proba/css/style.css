@@ -7199,6 +7199,9 @@ button.close {
   transition-duration: 1s;
   box-shadow: 0 0 50px #1EC4ED;
 }
+.rplycomment:focus {
+  border-style: none;
+}
 .view-comments .view-content .views-row {
   position: relative;
 }
@@ -7744,7 +7747,7 @@ body a {
   width: 230px;
 }
 .heroes-page .field img {
-  border: 3px solid black;
+  border: 3px solid #0A0010;
   margin: auto;
   transition-duration: 1s;
 }
