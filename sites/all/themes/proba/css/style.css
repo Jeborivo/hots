@@ -7301,7 +7301,8 @@ body a {
   font-style: bold;
 }
 .desno a:hover {
-  color: greenyellow;
+  color: #61AFE1;
+  text-shadow: 0 0 50px #61AFE1;
 }
 .titl h2 {
   color: #D6ECF5;
@@ -7425,6 +7426,32 @@ body a {
 }
 .block-system {
   color: white;
+}
+#block-block-4 h2 {
+  display: none;
+}
+.block-locale h2 {
+  display: none;
+}
+.contextual-links-region h2 {
+  display: none!important;
+}
+.language-switcher-locale-url {
+  transform: translateY(-45px);
+  width: 50px;
+}
+.language-switcher-locale-url li {
+  list-style: none;
+}
+.language-switcher-locale-url li a {
+  text-decoration: none;
+  color: white!important;
+}
+.language-switcher-locale-url li a:hover {
+  text-decoration: none;
+  transition: 0.5s;
+  text-shadow: 0 0 50px #61AFE1;
+  color: #61AFE1!important;
 }
 .region-map .dugmici {
   positon: fixed;

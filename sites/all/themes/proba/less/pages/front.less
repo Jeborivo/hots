@@ -120,7 +120,8 @@ li{
         text-transform: uppercase;
         font-style:bold;
         &:hover{
-          color: greenyellow;
+          color: #61AFE1;
+            text-shadow: 0 0 50px #61AFE1;
         }
       }
   }
@@ -261,4 +262,37 @@ li{
 // ovo je MyAcc strana
 .block-system{
   color:white;
+}
+// sitewide Language switcher
+#block-block-4{
+  h2{
+      display: none;
+    }
+}
+.block-locale{
+  h2 {
+    display: none;
+  }
+}
+.contextual-links-region {
+    h2{
+      display: none!important;
+    }
+}
+.language-switcher-locale-url{
+  transform: translateY(-45px);
+  width: 50px;
+  li{
+    a{
+      text-decoration: none;
+      color:white!important;
+      &:hover {
+        text-decoration: none;
+        transition: 0.5s;
+          text-shadow: 0 0 50px #61AFE1;
+        color:#61AFE1!important;
+      }
+    }
+      list-style: none;
+  }
 }

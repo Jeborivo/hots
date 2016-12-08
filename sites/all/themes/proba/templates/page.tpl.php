@@ -78,6 +78,7 @@
   <div class="slogo col-xl-12">
     <img src="http://heroes.playpark.com/en/Content/images/logo.png"/>
   </div>
+
   <div class="<?php print $container_class; ?>">
 
 
@@ -99,6 +100,10 @@
   </div>
 </header>
 <!-- MAIN ODAVLE -->
+
+<?php print render($page['header']); ?>
+</header> <!-- /#page-header -->
+
   <?php print render($page['map']); ?>
 <div class="main-container <?php print $container_class; ?>">
   <header role="banner" id="page-header">
@@ -106,8 +111,7 @@
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
 
-    <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
+
 
   <div class="row">
     <div class="hero">
@@ -160,7 +164,7 @@
 
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
-    
+
 
   </footer>
 <?php endif; ?>
