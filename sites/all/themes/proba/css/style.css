@@ -7575,6 +7575,14 @@ body a {
 .region-map .panel-body {
   background: linear-gradient(#0a0010, #2a0342);
   border-style: none;
+  position: relative;
+}
+.region-map .panel-body .maplayout {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 400px;
+  height: 300px;
 }
 .region-map .panel-body .zatvori {
   position: absolute;
@@ -7646,7 +7654,7 @@ body a {
   text-align: center;
   display: inline-block;
   position: absolute;
-  top: 12%;
+  top: 7%;
   left: 34%;
   width: 500px;
   height: 300px;
