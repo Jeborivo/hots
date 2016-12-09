@@ -54,9 +54,9 @@
   overflow:hidden;
 }
 body{
-  font-family: DecimaNovaW01-Bold!important;
+  font-family: IndustryW00-Demi!important;
  a{
-  font-family: DecimaNovaW01-Bold!important;
+  font-family: IndustryW00-Demi!important;
  }
   background-color:#0A0010;
 }
@@ -278,13 +278,16 @@ li{
 
 }
 .language-switcher-locale-url{
-  transform: translateY(-45px);
+
+  transform: translate(-130px,-45px);
   width: 50px;
   li{
+      border-style: none!important;
     a{
       text-decoration: none;
       color:white!important;
       &:hover {
+        background: transparent!important;
         text-decoration: none;
         transition: 0.5s;
           text-shadow: 0 0 50px #61AFE1;
@@ -293,4 +296,33 @@ li{
     }
       list-style: none;
   }
+}
+#block-locale-language{
+  width: 50px;
+}
+.front {
+  .language-switcher-locale-url{
+
+    transform: translate(-130px,-50px);
+    width: 50px;
+    li{
+        border-style: none!important;
+      a{
+        text-decoration: none;
+        color:white!important;
+        &:hover {
+          background: transparent!important;
+          text-decoration: none;
+          transition: 0.5s;
+            text-shadow: 0 0 50px #61AFE1;
+          color:#61AFE1!important;
+        }
+      }
+        list-style: none;
+    }
+  }
+  #block-locale-language{
+    width: 50px;
+  }
+
 }

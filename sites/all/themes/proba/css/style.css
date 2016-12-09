@@ -7246,11 +7246,11 @@ button.close {
   overflow: hidden;
 }
 body {
-  font-family: DecimaNovaW01-Bold !important;
+  font-family: IndustryW00-Demi !important;
   background-color: #0A0010;
 }
 body a {
-  font-family: DecimaNovaW01-Bold !important;
+  font-family: IndustryW00-Demi !important;
 }
 .margin-bottom {
   margin-bottom: 10px;
@@ -7434,10 +7434,11 @@ body a {
   display: none;
 }
 .language-switcher-locale-url {
-  transform: translateY(-45px);
+  transform: translate(-130px, -45px);
   width: 50px;
 }
 .language-switcher-locale-url li {
+  border-style: none!important;
   list-style: none;
 }
 .language-switcher-locale-url li a {
@@ -7445,10 +7446,36 @@ body a {
   color: white!important;
 }
 .language-switcher-locale-url li a:hover {
+  background: transparent!important;
   text-decoration: none;
   transition: 0.5s;
   text-shadow: 0 0 50px #61AFE1;
   color: #61AFE1!important;
+}
+#block-locale-language {
+  width: 50px;
+}
+.front .language-switcher-locale-url {
+  transform: translate(-130px, -50px);
+  width: 50px;
+}
+.front .language-switcher-locale-url li {
+  border-style: none!important;
+  list-style: none;
+}
+.front .language-switcher-locale-url li a {
+  text-decoration: none;
+  color: white!important;
+}
+.front .language-switcher-locale-url li a:hover {
+  background: transparent!important;
+  text-decoration: none;
+  transition: 0.5s;
+  text-shadow: 0 0 50px #61AFE1;
+  color: #61AFE1!important;
+}
+.front #block-locale-language {
+  width: 50px;
 }
 .region-map .dugmici {
   positon: fixed;
