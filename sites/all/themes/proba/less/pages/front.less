@@ -322,11 +322,12 @@ ul {
 }
 .front {
   .language-switcher-locale-url{
-
+ul{
     transform: translate(-130px,-50px);
     width: 50px;
     li{
         border-style: none!important;
+        list-style: none;
       a{
         text-decoration: none;
         color:white!important;
@@ -337,12 +338,26 @@ ul {
             text-shadow: 0 0 50px #61AFE1;
           color:#61AFE1!important;
         }
+      &:focus{
+        background-color: red;
+        outline-style: none;
+       }
       }
-        list-style: none;
     }
+  }
+}
+// .glava .container .nav-bar li{
+//   &:focus{
+//     background-color: transparent;
+//      border-style: none;
+//   }
+
   }
   #block-locale-language{
     width: 50px;
   }
-
-}
+  .glava .container .nav-bar li a:focus {
+      text-decoration: none;
+      background:transparent;
+      outline-style: none;
+  }

@@ -7472,27 +7472,36 @@ body a {
 #block-locale-language {
   width: 50px;
 }
-.front .language-switcher-locale-url {
+.front .language-switcher-locale-url ul {
   transform: translate(-130px, -50px);
   width: 50px;
 }
-.front .language-switcher-locale-url li {
+.front .language-switcher-locale-url ul li {
   border-style: none!important;
   list-style: none;
 }
-.front .language-switcher-locale-url li a {
+.front .language-switcher-locale-url ul li a {
   text-decoration: none;
   color: white!important;
 }
-.front .language-switcher-locale-url li a:hover {
+.front .language-switcher-locale-url ul li a:hover {
   background: transparent!important;
   text-decoration: none;
   transition: 0.5s;
   text-shadow: 0 0 50px #61AFE1;
   color: #61AFE1!important;
 }
-.front #block-locale-language {
+.front .language-switcher-locale-url ul li a:focus {
+  background-color: red;
+  outline-style: none;
+}
+#block-locale-language {
   width: 50px;
+}
+.glava .container .nav-bar li a:focus {
+  text-decoration: none;
+  background: transparent;
+  outline-style: none;
 }
 .region-map .dugmici {
   positon: fixed;

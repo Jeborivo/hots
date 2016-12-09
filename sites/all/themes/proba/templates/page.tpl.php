@@ -76,7 +76,7 @@
 
 <header id="navbar" role="banner" class="glava">
   <div class="slogo col-xl-12">
-    <img src="http://heroes.playpark.com/en/Content/images/logo.png"/>
+    <img src="sites/default/files/logo.png"/>
   </div>
 
   <div class="<?php print $container_class; ?>">
@@ -164,7 +164,7 @@
 
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
-  
+
 
   </footer>
 <?php endif; ?>
