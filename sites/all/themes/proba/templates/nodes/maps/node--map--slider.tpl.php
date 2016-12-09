@@ -129,9 +129,12 @@ jQuery(function ($) {
     <div class="trans">
   <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
   <?php print render($content['body']);?>
-  <?php print render($content['field_maplayout']); ?>
+
 <div class="layouttitle">  <?php print render($content['field_layouttitle']); ?></div>
 <div class="features"><?php print render($content['field_features']); ?></div>
+    </div>
+    <div class="maplayout">
+        <?php print render($content['field_maplayout']); ?>
     </div>
     <a  class="zatvori" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsenode-<?php print $node->nid; ?>" aria-expanded="true" aria-controls="collapseOne">
     <i class="fa fa-times" aria-hidden="true"></i>
