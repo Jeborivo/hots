@@ -7406,6 +7406,23 @@ body a {
 #first-time ul {
   display: none;
 }
+.mail {
+  float: left;
+}
+.contact {
+  float: right;
+}
+.contact ul {
+  list-style: none;
+}
+.contact ul li {
+  font-size: 22px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.contact ul li:hover {
+  color: rebeccapurple;
+}
 .footer {
   width: 100%;
   height: 180px;

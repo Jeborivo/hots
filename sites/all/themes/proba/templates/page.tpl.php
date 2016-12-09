@@ -164,6 +164,16 @@
 
   <footer class="footer <?php print $container_class; ?>">
     <?php print render($page['footer']); ?>
+    <div class="contact">
+          <ul>
+              <li><a href="https://sr-rs.facebook.com/HeroesSrbija/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/blizzheroes"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.twitch.tv/directory/game/Heroes%20of%20the%20Storm"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.reddit.com/r/heroesofthestorm/"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.youtube.com/user/BlizzHeroes"><i class="fa fa-youtube-play" aria-hidden="true"></a></i></li>
+          </ul>
+     </div>
+     <div class=""mail> Contact : Nasmail@gmail.com</div>
 
 
   </footer>
