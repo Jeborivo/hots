@@ -7492,11 +7492,11 @@ body a {
   background-color: red;
   outline-style: none;
 }
-.front .language-link {
-  padding: 0px!important;
-}
 #block-locale-language {
   width: 50px;
+}
+#block-locale-language ul li a {
+  padding: 0px;
 }
 .glava .container .nav-bar li a:focus {
   text-decoration: none;
