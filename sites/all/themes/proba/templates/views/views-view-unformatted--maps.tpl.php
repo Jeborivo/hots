@@ -22,19 +22,20 @@ jQuery(document).ready(function($) {
     });
 });
 </script>
+
 <div data-spy="affix" class="dugmici affix " data-offset-top="325">
-<button data-attr-scroll=".Bay"><img src="sites/default/files/pictures//ikonice/blackheart.png"/><p>Blackheart's Bay</p></button>
-<button data-attr-scroll=".Cursed"><img src="sites/default/files/pictures//ikonice/cursed.png"/><p>Cursed Hollow</p></button>
-<button data-attr-scroll=".Warhead"><img src="sites/default/files/pictures//ikonice/warhead.png"/><p>Warhead Junction</p></button>
-<button data-attr-scroll=".Braxis"><img src="sites/default/files/pictures//ikonice/braxis.png"/><p>Braxis Holdout</p></button>
-<button data-attr-scroll=".Dragon"><img src="sites/default/files/pictures//ikonice/dragon.png"/><p>Dragon Shire</p></button>
-<button data-attr-scroll=".Sky"><img src="sites/default/files/pictures//ikonice/temple.png"/><p>Sky Temple</p></button>
-<button data-attr-scroll=".Infernal"><img src="sites/default/files/pictures//ikonice/infernal.png"/><p>Infernal Shrines</p></button>
-<button data-attr-scroll=".Tomb"><img src="sites/default/files/pictures//ikonice/tomb.png"/><p>Spider Queen</p></button>
-<button data-attr-scroll=".Garden"><img src="sites/default/files/pictures//ikonice/garden.png"/><p>Garden of Terror</p></button>
-<button data-attr-scroll=".Haunted"><img src="sites/default/files/pictures//ikonice/haunted.png"/><p>Haunted Mines</p></button>
-<button data-attr-scroll=".Towers"><img src="sites/default/files/pictures//ikonice/towers.png"/><p>Towers of Doom</p></button>
-<button data-attr-scroll=".Battlefield"><img src="sites/default/files/pictures//ikonice/battlefield.png"/><p>Battlefield</p></button>
+<button data-attr-scroll=".Bay"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/blackheart.png"/><p>Blackheart's Bay</p></button>
+<button data-attr-scroll=".Cursed"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/cursed.png"/><p>Cursed Hollow</p></button>
+<button data-attr-scroll=".Warhead"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/warhead.png"/><p>Warhead Junction</p></button>
+<button data-attr-scroll=".Braxis"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/braxis.png"/><p>Braxis Holdout</p></button>
+<button data-attr-scroll=".Dragon"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/dragon.png"/><p>Dragon Shire</p></button>
+<button data-attr-scroll=".Sky"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/temple.png"/><p>Sky Temple</p></button>
+<button data-attr-scroll=".Infernal"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/infernal.png"/><p>Infernal Shrines</p></button>
+<button data-attr-scroll=".Tomb"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/tomb.png"/><p>Spider Queen</p></button>
+<button data-attr-scroll=".Garden"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/garden.png"/><p>Garden of Terror</p></button>
+<button data-attr-scroll=".Haunted"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/haunted.png"/><p>Haunted Mines</p></button>
+<button data-attr-scroll=".Towers"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/towers.png"/><p>Towers of Doom</p></button>
+<button data-attr-scroll=".Battlefield"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/battlefield.png"/><p>Battlefield</p></button>
 
 </div>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

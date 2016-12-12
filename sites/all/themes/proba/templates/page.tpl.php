@@ -76,7 +76,7 @@
 
 <header id="navbar" role="banner" class="glava">
   <div class="slogo col-xl-12">
-  <a href="http://localhost/hots/">    <img src="sites/default/files/logo.png"/>  </a>
+  <a href="<?php echo $base_path?>">    <img src="<?php echo $base_path?>sites/default/files/logo.png"/>  </a>
   </div>
 
   <div class="<?php print $container_class; ?>">

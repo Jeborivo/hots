@@ -76,7 +76,7 @@
 
 <header id="navbar" role="banner" class="glava">
   <div class="slogo col-xl-12">
-    <img src="http://heroes.playpark.com/en/Content/images/logo.png"/>
+  <a href="<?php echo $base_path?>">    <img src="<?php echo $base_path;?>sites/default/files/logo.png"/>  </a>
   </div>
   <div class="<?php print $container_class; ?>">
 
