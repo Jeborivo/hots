@@ -84,7 +84,6 @@ drupal_add_js('sites/all/themes/proba/js/test.js');
       // We hide the comments and links now so that we can render them later.
       hide($content['links']);
       print render($content);
-       echo ($cid);
     ?>
     <?php if ($signature): ?>
     <div class="user-signature clearfix ">
