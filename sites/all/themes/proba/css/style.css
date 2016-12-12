@@ -7495,6 +7495,9 @@ body a {
   background-color: red;
   outline-style: none;
 }
+.front .language-link {
+  padding: 0px!important;
+}
 #block-locale-language {
   width: 50px;
 }
