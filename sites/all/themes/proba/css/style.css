@@ -7507,6 +7507,7 @@ body a {
   outline-style: none;
 }
 .region-map .dugmici {
+  font-size: 12px;
   positon: fixed;
   height: 100px;
   top: 375px;
