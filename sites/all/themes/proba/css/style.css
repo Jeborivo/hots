@@ -7523,6 +7523,9 @@ body a {
 #edit-timezone {
   display: none;
 }
+.nav-center ul {
+  margin-left: 21%;
+}
 .region-map .dugmici {
   font-size: 12px;
   positon: fixed;
@@ -7875,6 +7878,9 @@ body a {
   text-shadow: 0 0 5px rebeccapurple;
   font-weight: 700;
   font-size: 16px;
+}
+.heroes-page .nav-center ul {
+  margin-left: 21%;
 }
 .free-4 {
   display: none;

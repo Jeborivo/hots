@@ -84,7 +84,16 @@
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="nav-bar">
-        <nav role="navigation">
+        <nav role="navigation" class="<?php
+global $user;
+
+if ( $user->uid ) {
+
+}
+else {
+  echo "nav-center";
+}
+?>">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
