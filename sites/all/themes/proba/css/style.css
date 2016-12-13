@@ -7206,6 +7206,9 @@ button.close {
 .slick-track .node-hero {
   position: relative;
 }
+.hide-important {
+  display: none!important;
+}
 .glava {
   background-image: url('../images/boba.jpg');
   background-size: cover;

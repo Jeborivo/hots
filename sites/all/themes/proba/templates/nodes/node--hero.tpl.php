@@ -79,7 +79,8 @@
  * @ingroup templates
  */
  $subname = field_get_items("node",$node,"field_sub_name");
- $nodenid =$node->nid;
+ $nodenid = drupal_get_form("comment_node_hero_form",
+ (object) array('nid' => $node->nid));
  ?>
 <script>
 jQuery(function($){
@@ -140,7 +141,16 @@ jQuery(function($){
    <?php print render($content['field_countered']);?>
  </div>
 
- <div class="panel-group fixcomm affix" id="accordion" role="tablist" aria-multiselectable="true" data-spy="affix" data-offset-top="100">
+ <div class="panel-group fixcomm affix <?php
+global $user;
+
+if ( $user->uid ) {
+
+}
+else {
+echo "hide-important";
+}
+?>" id="accordion" role="tablist" aria-multiselectable="true" data-spy="affix" data-offset-top="100">
    <div class="panel panel-default">
      <div class="panel-heading" role="tab" id="headingOne">
        <h4 class="panel-title">
@@ -157,8 +167,7 @@ jQuery(function($){
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_tags']);
-    print drupal_render(drupal_get_form("comment_node_hero_form",
-    (object) array('nid' => $nodenid)));
+    print drupal_render ($nodenid);
     ?>
   </div>
 </div>
