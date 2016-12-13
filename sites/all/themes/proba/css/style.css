@@ -7097,6 +7097,12 @@ button.close {
   border-bottom: 1px solid #423E82;
   padding-bottom: 10px;
 }
+.herokomentar ul .comment-edit {
+  display: none;
+}
+.herokomentar ul .comment-delete {
+  display: none;
+}
 .herokomentar ul .last {
   display: none;
 }
