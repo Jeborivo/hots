@@ -7526,9 +7526,14 @@ body a {
 .nav-center ul {
   margin-left: 21%;
 }
+@media (max-width: 1024px) {
+  .nav-center ul {
+    width: 96%;
+    margin-left: 5%;
+  }
+}
 .region-map .dugmici {
   font-size: 12px;
-  positon: fixed;
   height: 100px;
   top: 375px;
   width: 100%;
@@ -7543,6 +7548,11 @@ body a {
   width: 65px;
   height: 65px;
   border-style: none;
+}
+@media (max-width: 1024px) {
+  .region-map .dugmici button {
+    width: 64px;
+  }
 }
 .region-map .dugmici button p {
   display: none;
