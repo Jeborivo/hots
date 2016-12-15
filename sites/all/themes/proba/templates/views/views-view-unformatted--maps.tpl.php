@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 <button data-attr-scroll=".Garden"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/garden.png"/><p>Garden of Terror</p></button>
 <button data-attr-scroll=".Haunted"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/haunted.png"/><p>Haunted Mines</p></button>
 <button data-attr-scroll=".Towers"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/towers.png"/><p>Towers of Doom</p></button>
-<button data-attr-scroll=".Battlefield"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/battlefield.png"/><p>Battle of Eternity</p></button>
+<button data-attr-scroll=".Battlefield"><img src="<?php echo $GLOBALS['base_path']?>sites/default/files/pictures/ikonice/battlefield.png"/><p>Battlefield</p></button>
 
 </div>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">

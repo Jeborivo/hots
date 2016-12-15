@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'foobar_proregular';
+  src: url('foobar_pro-regular-webfont.woff2') format('woff2'), url('foobar_pro-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -248,12 +254,9 @@ th {
   }
 }
 @font-face {
-    font-family: 'foobar_proregular';
-    src: url('foobar_pro-regular-webfont.woff2') format('woff2'),
-         url('foobar_pro-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -7545,6 +7548,9 @@ body a {
     margin-left: 5%;
   }
 }
+.region-map h2 {
+  font-family: foobar_proregular!important;
+}
 .region-map .dugmici {
   font-size: 12px;
   height: 100px;
@@ -7630,7 +7636,7 @@ body a {
   color: #D6ECF5;
   font-size: 34px;
   text-transform: uppercase;
-  font-family: arial, sans-serif;
+  font-family: foobar_proregular!important;
   text-shadow: 0 0 5px rebeccapurple;
 }
 .region-map .panel-default > .panel-heading + .panel-collapse > .panel-body {
@@ -7640,7 +7646,7 @@ body a {
   color: #D6ECF5;
   font-size: 34px;
   text-transform: uppercase;
-  font-family: arial, sans-serif;
+  font-family: foobar_proregular!important;
   text-shadow: 0 0 5px rebeccapurple;
   position: relative;
   width: 100%;
@@ -7739,7 +7745,7 @@ body a {
 .region-map .view-content .views-row .pref-heroes h4 {
   color: greenyellow;
   text-transform: uppercase;
-  font-family: arial, sans-serif;
+  font-family: foobar_proregular!important;
   text-shadow: 0 0 5px rebeccapurple;
 }
 .region-map .view-content .views-row .pref-heroes .field-item {
