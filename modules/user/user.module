@@ -8,7 +8,7 @@
 /**
  * Maximum length of username text field.
  */
-define('USERNAME_MAX_LENGTH', 60);
+define('USERNAME_MAX_LENGTH', 20);
 
 /**
  * Maximum length of user e-mail text field.
