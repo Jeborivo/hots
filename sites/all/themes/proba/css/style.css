@@ -248,9 +248,12 @@ th {
   }
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    font-family: 'foobar_proregular';
+    src: url('foobar_pro-regular-webfont.woff2') format('woff2'),
+         url('foobar_pro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 .glyphicon {
   position: relative;
@@ -7198,6 +7201,7 @@ button.close {
   border-style: none;
   transition-duration: 1s;
   color: white;
+  z-index: 150;
 }
 .rplycomment:hover {
   color: #1EC4ED;
@@ -7255,11 +7259,11 @@ button.close {
   overflow: hidden;
 }
 body {
-  font-family: IndustryW00-Demi !important;
+  font-family: foobar_proregular!important;
   background-color: #0A0010;
 }
 body a {
-  font-family: IndustryW00-Demi !important;
+  font-family: foobar_proregular!important;
 }
 .margin-bottom {
   margin-bottom: 10px;
@@ -7556,6 +7560,7 @@ body a {
   margin-right: 15px;
   width: 65px;
   height: 65px;
+  transition-duration: 0.3s;
   border-style: none;
 }
 @media (max-width: 1024px) {
@@ -7569,13 +7574,16 @@ body a {
 .region-map .dugmici button:hover > p {
   display: block;
   overflow: visible;
+  border-style: none;
 }
 .region-map .dugmici button img {
   height: 60px;
   width: 60px;
+  transition-duration: 5.3s;
 }
 .region-map .dugmici button img:hover {
   background: radial-gradient(circle 40px, #1EC4ED 30%, transparent 85%);
+  transition-duration: 5.3s;
 }
 .region-map .dugmici button:focus {
   outline-style: none;
