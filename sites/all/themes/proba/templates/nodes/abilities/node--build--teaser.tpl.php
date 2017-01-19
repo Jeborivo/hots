@@ -78,7 +78,7 @@
  *
  * @ingroup templates
  */
-
+$flag = flag_get_flag('vote_build');
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
@@ -112,7 +112,9 @@
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_tags']);
-
+    print render($content['flag_vote_build']);
+    print "+ " ;
+    print $flag->get_count($nid);
     ?>
 
     </div>
