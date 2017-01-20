@@ -5837,6 +5837,9 @@ button.close {
 .breadcrumb {
   display: none;
 }
+.tabledrag-handle {
+  display: none;
+}
 .form-wrapper .btn-default {
   display: none;
 }
