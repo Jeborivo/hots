@@ -5864,6 +5864,34 @@ button.close {
 #edit-flag {
   display: none;
 }
+.views-field {
+  background-color: #0A0010;
+}
+.views-field .active {
+  background-color: #0A0010;
+}
+.table-responsive .views-table .views-field {
+  background-color: #0A0010;
+}
+.table-responsive .views-table .views-field:hover {
+  background-color: #0A0010!important;
+}
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr:hover > .active,
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #0A0010;
+}
+.help-block {
+  color: #ccc;
+}
+.panel-default {
+  border: 0px solid black!important;
+}
+#edit-locale .panel-heading {
+  display: none;
+}
 .modal-open {
   overflow: hidden;
 }
