@@ -5834,6 +5834,36 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+.breadcrumb {
+  display: none;
+}
+.form-wrapper .btn-default {
+  display: none;
+}
+.sticky-header {
+  display: none;
+}
+.input-group-addon {
+  display: none;
+}
+.input-group .form-control {
+  width: 225%;
+}
+#edit-field-hero-build-und-0-target-id {
+  width: 100%!important;
+}
+.tabledrag-toggle-weight {
+  display: none;
+}
+.tabledrag-hide {
+  display: none;
+}
+.vertical-tabs-list {
+  display: none;
+}
+#edit-flag {
+  display: none;
+}
 .modal-open {
   overflow: hidden;
 }
@@ -6793,6 +6823,9 @@ button.close {
 .proba-tpl .field-type-text-with-summary {
   color: #d6ecf5;
   font-size: 17px;
+}
+.list-inline > li {
+  display: none;
 }
 .views-field-value-2 img {
   width: 50px;
